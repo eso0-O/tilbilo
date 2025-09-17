@@ -1,0 +1,109 @@
+/* style.css pour page Contact */
+
+/* Bandeau header */
+.contact-header {
+  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+}
+
+.contact-header p {
+  font-size: 1.25rem;
+}
+
+/* FIN style.css pour page Contact */
+
+/* style.css pour page Index */
+
+/* Section Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Texte hero */
+.hero h1, .hero p {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+/* Cards Services */
+.card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+
+/* FIN style.css pour page Index */
+
+
+/* style.css pour page SERVICES */
+
+/* Bandeau header */
+.services-header {
+  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.services-header h1 {
+  font-size: 3rem;
+}
+
+.services-header p {
+  font-size: 1.25rem;
+}
+
+/* Images des services */
+section img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+
+/* FIN style.css pour page SERVICES */
+
+
+/* style.css pour page Qui sommes-nous ? (A-propos) */
+/* Bandeau header */
+.about-header {
+  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.about-header h1 {
+  font-size: 3rem;
+}
+
+.about-header p {
+  font-size: 1.25rem;
+}
+
+/* Équipe */
+.team-member img {
+  object-fit: cover;
+  border: 3px solid #0d6efd;
+}
+
+/* style.css pour page Qui sommes-nous ? (A-propos) */

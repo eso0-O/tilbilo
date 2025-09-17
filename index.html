@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tilbilo - Cabinet de Conseil</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personnalisé -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Tilbilo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Tilbilo - Cabinet de Conseil</h1>
+      <p class="lead mt-3">Exploitez la valeur stratégique de vos données grâce à notre expertise en recherche et analyse.</p>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3">Nous Contacter</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="fw-bold">Qui sommes-nous ?</h2>
+          <p class="mt-3">
+            Notre cabinet de conseil propose une expertise pointue en recherche et analyse de données, au service des organisations publiques, privées et à but non lucratif.
+            Nous aidons nos clients à exploiter pleinement la valeur stratégique de leurs données, en les accompagnant dans la collecte, le traitement, l'exploitation et l'interprétation de grands volumes d'informations.
+          </p>
+          <p>Notre approche est collaborative, orientée vers les résultats et adaptée aux besoins spécifiques de chaque client.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" class="img-fluid rounded shadow" alt="Cabinet de conseil">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Nos Services</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" class="card-img-top" alt="Recherche et analyse">
+            <div class="card-body">
+              <h5 class="card-title">Recherche et Analyse de Données</h5>
+              <p class="card-text">Exploitez vos données pour des décisions stratégiques.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1581091012184-5c2b6e6e8c4b" class="card-img-top" alt="Tableaux de bord">
+            <div class="card-body">
+              <h5 class="card-title">Tableaux de Bord</h5>
+              <p class="card-text">Conception et déploiement d’indicateurs et dashboards sur mesure.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1601987077422-9ef8b5bdc1c6" class="card-img-top" alt="Études et enquêtes">
+            <div class="card-body">
+              <h5 class="card-title">Études et Enquêtes</h5>
+              <p class="card-text">Approches qualitatives et quantitatives pour comprendre vos enjeux.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1508385082359-f38ae991e8f3" class="card-img-top" alt="Évaluation">
+            <div class="card-body">
+              <h5 class="card-title">Évaluation de Projets</h5>
+              <p class="card-text">Mesurez l’impact et optimisez vos programmes et projets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Contactez-nous</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Votre message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2024 Tilbilo - Cabinet de Conseil. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
