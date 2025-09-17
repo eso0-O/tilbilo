@@ -2,7 +2,7 @@
 
 /* Bandeau header */
 .contact-header {
-  background: url('/img/cabinet-data-bureau-home.jpg') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
   height: 40vh;
   display: flex;
   align-items: center;
