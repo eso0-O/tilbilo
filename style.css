@@ -2,7 +2,8 @@
 
 /* Bandeau header */
 .contact-header {
-  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
+  background: url('/img/background-bureau-home.jpg') center/cover no-repeat;
+  background2: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
   height: 40vh;
   display: flex;
   align-items: center;
@@ -25,7 +26,6 @@
 /* Section Hero */
 .hero {
   background: url('/img/background-bureau-home.jpg') center/cover no-repeat;
-  gbackground: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
   height: 80vh;
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@ footer {
 
 /* Bandeau header */
 .services-header {
-  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
+  background: url('/img/background-bureau-home.jpg') center/cover no-repeat;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -95,7 +95,7 @@ section img {
 /* style.css pour page Qui sommes-nous ? (A-propos) */
 /* Bandeau header */
 .about-header {
-  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
+  background: url('/img/background-bureau-home.jpg') center/cover no-repeat;
   height: 40vh;
   display: flex;
   align-items: center;
