@@ -47,7 +47,17 @@ footer {
   font-size: 0.9rem;
 }
 
-
+.bouton-chong {
+  background-color: #1077a0;
+  color: white;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+.bouton-chong:hover {
+  background-color: #53add1; /* Un vert plus foncé */
+  color: #ddd; /* Une couleur de texte plus claire */
+}
 /* FIN style.css pour page Index */
 
 
