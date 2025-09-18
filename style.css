@@ -24,7 +24,8 @@
 
 /* Section Hero */
 .hero {
-  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
+  background: url('../img/hero.jpg') center/cover no-repeat;
+  gbackground: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
   height: 80vh;
   display: flex;
   align-items: center;
