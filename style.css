@@ -19,6 +19,13 @@
   font-size: 1.25rem;
 }
 
+iframe {
+  width: 100%;
+  height: calc(100vh - 200px); /* 100vh = hauteur fenêtre ; -200px = hauteur navbar+header */
+  border: 0;
+}
+
+
 /* FIN style.css pour page Contact */
 
 /* style.css pour page Index */
