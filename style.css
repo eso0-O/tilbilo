@@ -124,4 +124,80 @@ section img {
   border: 3px solid #1077a0;
 }
 
-/* style.css pour page Qui sommes-nous ? (A-propos) */
+/* style.css pour page Confirmation */
+
+.confirmation-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+
+  .confirmation-container {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 550px!important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .confirmation-container img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .confirmation-container h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .confirmation-container p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .confirmation-container .mbutton {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #30cfd0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .confirmation-container .mbutton:hover {
+    background-color: #2ba3a5;
+  }
+
+  .btn-custom {
+    font-size: 0.5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+/*--Confirmation.html style---*/
+.copyright {
+  color: #8E9A9E;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none; /* Chrome, Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+}
+
+
+
+/* FIN style.css pour page Confirmation */
