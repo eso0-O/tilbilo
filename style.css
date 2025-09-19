@@ -165,39 +165,5 @@ section img {
     line-height: 1.5;
   }
 
-  .confirmation-container .mbutton {
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: #30cfd0;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-
-  .confirmation-container .mbutton:hover {
-    background-color: #2ba3a5;
-  }
-
-  .btn-custom {
-    font-size: 0.5rem;
-    padding: 0.25rem 0.5rem;
-}
-
-/*--Confirmation.html style---*/
-.copyright {
-  color: #8E9A9E;
-  border: none;
-  padding: 12px;
-  font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none; /* Chrome, Safari */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* Internet Explorer/Edge */
-}
-
-
 
 /* FIN style.css pour page Confirmation */
