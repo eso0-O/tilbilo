@@ -20,6 +20,7 @@
 }
 
 .mesCordonnees {
+  position: relative;
   margin-top: 9rem !important ;
 }
 
