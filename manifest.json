@@ -2,7 +2,8 @@
   "name": "TILBILO Consulting • Cabinet de Conseil",
   "short_name": "Tilbilo",
   "description": "Tilbilo est un cabinet de conseil expert en recherche et analyse de données, tableaux de bord et évaluation de projets.",
-  "start_url": "/index.html",
+  "lang": "fr",
+  "start_url": "/",
   "scope": "/",
   "icons": [
     {
@@ -17,7 +18,10 @@
     }
   ],
   "theme_color": "#1077a0",
-  "background_color": "#00853F",
+  "background_color": "#1077a0",
   "display": "standalone",
-  "orientation": "portrait"
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "portrait",
+  "categories": ["business", "productivity"]
+
 }
