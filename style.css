@@ -175,14 +175,11 @@ section img {
   padding: 50px;
 }
 .h1-404 {
+    font-family: "Gill Sans Extrabold", Arial, sans-serif !important;
   font-size: 3em;
-  color: #333;
-}
-.p-404 {
-  font-family: "Gill Sans Extrabold", Arial, sans-serif !important;
-  font-size: 0,7em;
   color: #007acc;
 }
+
 .retour-404 {
   display: inline-block;
   margin-top: 20px;
