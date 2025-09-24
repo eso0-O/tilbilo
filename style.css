@@ -176,13 +176,13 @@ section img {
 }
 .h1-404 {
   font-size: 3em;
-  color: #007acc;
+  color: #1077a0;
 }
 .retour-404 {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #007acc;
+  background: #1077a0;
   color: white;
   text-decoration: none;
   border-radius: 5px;
