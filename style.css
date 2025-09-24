@@ -179,7 +179,8 @@ section img {
   color: #333;
 }
 .h2-404 {
-  font-size: 1em;
+  font-family: Knewave,"Gill Sans Extrabold", Arial, sans-serif;
+  font-size: 0,7em;
   color: #ff0000;
 }
 .retour-404 {
