@@ -166,3 +166,26 @@ section img {
   }
 
 /* FIN style.css pour page Confirmation */
+
+/* style.css pour page 404 */
+.body-404 {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+h51 {
+  font-size: 3em;
+  color: #333;
+}
+.retour-404 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* FIN style.css pour page 404 */
