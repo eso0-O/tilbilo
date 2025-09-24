@@ -168,13 +168,13 @@ section img {
 /* FIN style.css pour page Confirmation */
 
 /* style.css pour page 404 */
-.body-404 {
+.corps-404 {
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 50px;
 }
-h51 {
+.h1-404 {
   font-size: 3em;
   color: #333;
 }
