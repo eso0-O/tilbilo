@@ -179,7 +179,7 @@ section img {
   color: #333;
 }
 .h2-404 {
-  font-family: Knewave,"Gill Sans Extrabold", Arial, sans-serif;
+  font-family: "Gill Sans Extrabold", Arial, sans-serif !important;
   font-size: 0,7em;
   color: #007acc;
 }
