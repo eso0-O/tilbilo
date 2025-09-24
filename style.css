@@ -178,6 +178,10 @@ section img {
   font-size: 3em;
   color: #333;
 }
+.h2-404 {
+  font-size: 5em;
+  color: #ff0000;
+}
 .retour-404 {
   display: inline-block;
   margin-top: 20px;
