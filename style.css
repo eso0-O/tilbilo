@@ -211,7 +211,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #1077a0;
+  color: #67b5d4;
   text-decoration: underline;
 }
 
@@ -222,7 +222,7 @@ footer .social-icons a i {
 }
 
 footer .social-icons a:hover i {
-  color: #1077a0;
+  color: #70bddb;
 }
 
 /* Ajustement mobile */
