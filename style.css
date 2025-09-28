@@ -195,7 +195,7 @@ section img {
 /* ------------style.css pour section FOOTER------------------------- */
 /* Taille du logo */
 .footer-logo {
-  max-height: 75px;
+  max-height: 100px;
   width: auto;
 }
 
