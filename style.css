@@ -69,7 +69,7 @@ footer {
 /* FIN style.css pour page Index */
 
 
-/* style.css pour page SERVICES */
+/* style.css pour page EXPERTISES */
 
 /* Bandeau header */
 .services-header {
@@ -89,14 +89,14 @@ footer {
   font-size: 1.25rem;
 }
 
-/* Images des services */
+/* Images des EXPERTISES */
 section img {
   max-height: 300px;
   object-fit: cover;
 }
 
 
-/* FIN style.css pour page SERVICES */
+/* FIN style.css pour page EXPERTISES */
 
 
 /* style.css pour page Qui sommes-nous ? (A-propos) */
