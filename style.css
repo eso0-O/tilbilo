@@ -233,3 +233,43 @@ footer .social-icons a:hover i {
 }
 
 /* FIN style.css pour section FOOTER */
+
+/* style.css pour Mention légale style titre */
+/* On définit les compteurs */
+body {
+  counter-reset: h1; /* réinitialise le compteur de h1 */
+}
+
+h1 {
+  counter-reset: h2; /* réinitialise le compteur de h2 à chaque nouveau h1 */
+}
+
+h1::before {
+  counter-increment: h1; /* incrémente h1 */
+  content: counter(h1) ". "; /* affiche 1. , 2. , 3. */
+}
+
+h2 {
+  counter-reset: h3; /* réinitialise h3 à chaque nouveau h2 */
+}
+
+h2::before {
+  counter-increment: h2; /* incrémente h2 */
+  content: counter(h1) "." counter(h2) " "; /* affiche 1.1, 1.2 */
+}
+
+h3 {
+  counter-reset: h4; /* si tu veux un h4 plus tard */
+}
+
+h3::before {
+  counter-increment: h3;
+  content: counter(h1) "." counter(h2) "." counter(h3) " "; /* affiche 1.1.1 */
+}
+
+/* Style optionnel pour que ça ressemble à Word */
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+  margin-top: 1em;
+}
+/* FIN style.css pour Mention légale style titre */
