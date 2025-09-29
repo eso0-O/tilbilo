@@ -234,41 +234,37 @@ footer .social-icons a:hover i {
 
 /* FIN style.css pour section FOOTER */
 
+
 /* style.css pour Mention légale style titre */
 /* On définit les compteurs */
-body {
-  counter-reset: h1; /* réinitialise le compteur de h1 */
-}
-
-h1 {
-  counter-reset: h2; /* réinitialise le compteur de h2 à chaque nouveau h1 */
-}
-
-h1::before {
-  counter-increment: h1; /* incrémente h1 */
-  content: counter(h1) ". "; /* affiche 1. , 2. , 3. */
-}
-
 h2 {
-  counter-reset: h3; /* réinitialise h3 à chaque nouveau h2 */
+  counter-reset: h3; /* réinitialise le compteur du niveau suivant */
 }
-
 h2::before {
-  counter-increment: h2; /* incrémente h2 */
-  content: counter(h1) "." counter(h2) " "; /* affiche 1.1, 1.2 */
+  counter-increment: h2; /* incrémente le compteur h2 */
+  content: counter(h2) ". "; /* affiche 1. , 2. , 3. */
 }
 
+/* ---- H3 = 1.1, 1.2... ---- */
 h3 {
-  counter-reset: h4; /* si tu veux un h4 plus tard */
+  counter-reset: h4; /* réinitialise le compteur du niveau suivant */
 }
-
 h3::before {
-  counter-increment: h3;
-  content: counter(h1) "." counter(h2) "." counter(h3) " "; /* affiche 1.1.1 */
+  counter-increment: h3; /* incrémente le compteur h3 */
+  content: counter(h2) "." counter(h3) " "; /* affiche 1.1, 1.2 */
 }
 
-/* Style optionnel pour que ça ressemble à Word */
-h1, h2, h3 {
+/* ---- H4 = 1.1.1, 1.1.2... ---- */
+h4 {
+  counter-reset: h5; /* si on a un h5 plus tard */
+}
+h4::before {
+  counter-increment: h4; /* incrémente le compteur h4 */
+  content: counter(h2) "." counter(h3) "." counter(h4) " "; /* affiche 1.1.1 */
+}
+
+/* Style optionnel */
+h2, h3, h4 {
   font-family: Arial, sans-serif;
   margin-top: 1em;
 }
