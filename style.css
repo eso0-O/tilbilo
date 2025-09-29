@@ -237,7 +237,7 @@ footer .social-icons a:hover i {
 
 /* style.css pour Mention légale style titre */
 /* On définit les compteurs */
-body {
+bxody {
   counter-reset: h2;
 }
 
