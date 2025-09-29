@@ -268,23 +268,9 @@ h4::before {
   content: counter(h2) "." counter(h3) "." counter(h4) ". "; /* affiche 1.1.1. */
 }
 
-/* ---- H5 = 1.1.1.1., etc ---- */
-h5 {
-  counter-reset: h6;
-}
-h5::before {
-  counter-increment: h5;
-  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
-}
-
-/* ---- H6 = 1.1.1.1.1., etc ---- */
-h6::before {
-  counter-increment: h6;
-  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". ";
-}
 
 /* Style optionnel */
-h2, h3, h4, h5, h6 {
+h2, h3, h4 {
   font-family: Arial, sans-serif;
   margin-top: 1em;
 }
