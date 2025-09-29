@@ -245,32 +245,32 @@ footer .social-icons a:hover i {
 .niveauH2 {
   counter-reset: h3; /* reset des sous-niveaux à chaque nouveau h2 */
 }
-niveauH2::before {
+.niveauH2::before {
   counter-increment: h2; /* incrémente h2 */
   content: counter(h2) ". "; /* affiche 1. */
 }
 
 /* ---- H3 = 1.1., 2.1., etc ---- */
-niveauH3 {
+.niveauH3 {
   counter-reset: h4; /* reset du niveau suivant */
 }
-niveauH3::before {
+.niveauH3::before {
   counter-increment: h3; /* incrémente h3 */
   content: counter(h2) "." counter(h3) ". "; /* affiche 1.1. */
 }
 
 /* ---- H4 = 1.1.1., 2.1.1., etc ---- */
-niveauH4 {
+.niveauH4 {
   counter-reset: h5;
 }
-niveauH4::before {
+.niveauH4::before {
   counter-increment: h4;
   content: counter(h2) "." counter(h3) "." counter(h4) ". "; /* affiche 1.1.1. */
 }
 
 
 /* Style optionnel */
-niveauH2, niveauH3, niveauH4 {
+.niveauH2, .niveauH3, .niveauH4 {
   font-family: Arial, sans-serif;
   color: #a71515;
 }
