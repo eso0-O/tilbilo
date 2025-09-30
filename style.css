@@ -275,3 +275,12 @@ footer .social-icons a:hover i {
 }
  
 /* FIN style.css pour Mention légale style titre */
+
+/* ------ Style des point ------*/
+/**disc (par défaut, rond plein), circle (cercle vide), square (carré plein)et none (pas de puce) */
+
+ul {
+  list-style-type: circle; /* met des carrés à la place des puces rondes */
+}
+
+/* ------ FIN Style des point ------*/
