@@ -280,7 +280,7 @@ footer .social-icons a:hover i {
 /**disc (par défaut, rond plein), circle (cercle vide), square (carré plein)et none (pas de puce) */
 
 ul {
-  list-style-type: circle; /* met des carrés à la place des puces rondes */
+  list-style-type: square; /* met des carrés à la place des puces rondes */
 }
 
 /* ------ FIN Style des point ------*/
