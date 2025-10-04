@@ -4,8 +4,6 @@
   --main-padding: 20px;
 }
 
-
-
 /*------- VARIABLES GLOBALES ----- */
 
 /* style.css pour page Contact */
@@ -66,7 +64,7 @@ footer {
 }
 
 .bouton-chong {
-  background-color: #1077a0;
+  background-color: var(--main-color);
   color: white;
   border: none;
   align-items: center;
@@ -131,7 +129,7 @@ section img {
 /* Équipe */
 .team-member img {
   object-fit: cover;
-  border: 3px solid #1077a0;
+  border: 3px solid var(--main-color);
 }
 
 /* style.css pour page Confirmation */
@@ -187,13 +185,13 @@ section img {
 .h1-404 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 3em;
-  color: #1077a0;
+  color: var(--main-color);
 }
 .retour-404 {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #1077a0;
+  background: var(--main-color);
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -211,7 +209,7 @@ section img {
 
 /* Titres du footer */
 footer h5 {
-  color: #1077a0; /* couleur accent */
+  color: var(--main-color); /* couleur accent */
   margin-top: 15px;
 }
 
@@ -281,7 +279,7 @@ footer .social-icons a:hover i {
 
 /* Style optionnel */
 .niveauH2, .niveauH3, .niveauH4 {
-  color: #1077a0;
+  color: var(--main-color);
 }
  
 /* FIN style.css pour Mention légale style titre */
