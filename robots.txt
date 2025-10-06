@@ -1,6 +1,6 @@
 # Fichier robots.txt pour TILBILO Consulting
-# Généré le : septembre 2025
-# Site : https://tilbilo.com/
+# Généré le : octobre 2025
+# Site : https://tilbilo.com/ et https://tilbilo.fr/
 
 User-agent: *
 Allow: /
