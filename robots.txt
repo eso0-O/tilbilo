@@ -1,6 +1,6 @@
 # Fichier robots.txt pour TILBILO Consulting
 # Généré le : octobre 2025
-# Site : https://tilbilo.com/ et https://tilbilo.fr/
+# Site : https://tilbilo.fr/ et https://tilbilo.com/
 
 User-agent: *
 Allow: /
@@ -55,4 +55,4 @@ Disallow: /
 
 # === INSTRUCTIONS FINALES ===
 # Sitemap
-Sitemap: https://tilbilo.com/sitemap.xml
+Sitemap: https://tilbilo.fr/sitemap.xml
