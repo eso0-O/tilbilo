@@ -101,8 +101,10 @@
         action="https://script.google.com/macros/s/AKfycbxyydaCs9PtME4-QM4hX0Fmk7SrmSxW2J1EiMSCM4m3LwrXnO5wmEc5YUH_sMnjd5355w/exec"
         method="POST"
         enctype="multipart/form-data"
+        target="hidden_iframe"
+        onsubmit="formSubmitted()"
       >
-
+  
         <div class="form-group mb-3">
           <label class="form-label" for="prenom">Prénom
             <span class="text-danger" title="Ce champ est requis.">*</span>
@@ -125,9 +127,10 @@
         </div>
 
         <div class="form-group mb-3">
-          <label class="form-label" for="email">Adresse e-mail</label>
-          <input type="email" class="form-control" id="email" name="email">
-          <p><font size="2">Veuillez entrer une adresse e-mail valide (facultatif).</font></p>
+          <label class="form-label" for="email">Adresse e-mail
+            <span class="text-danger" title="Ce champ est requis.">*</span>
+          </label>
+          <input type="email" class="form-control" id="email" name="email" required>
         </div>
 
         <div class="form-group mb-3 mt-4">
@@ -135,18 +138,26 @@
           <textarea class="form-control" id="message" name="message"></textarea>
         </div>
 
-        <h4 class="mt-4">Joindre un fichier</h4>
         <div class="form-group mb-3">
-          <label class="form-label" for="fichier">Téléverser le fichier</label>
+          <label class="form-label" for="fichier">Joindre un fichier</label>
           <input type="file" class="form-control" id="fichier" name="fichier" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg">
         </div>
 
+        <button type="submit" class="btn btn-primary">Envoyer</button>
 
-
-        <button type="submit" class=" btn-submit mt-3 mb-5 btn btn-primary btn-block w-35">Envoyer</button>
       </form>
 
+      <!-- Iframe caché pour soumission sans rechargement -->
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
       <script>
+      function formSubmitted() {
+        alert("✅ Votre message a bien été envoyé !");
+        document.getElementById('tilbiloForm').reset();
+      }
+      </script>
+
+      <!--script>
       document.getElementById('tilbiloForm').addEventListener('submit', async (e) => {
         e.preventDefault();
         const form = e.target;
@@ -162,7 +173,7 @@
           alert("❌ Erreur : " + result.message);
         }
       });
-      </script>
+      </script-->
 
     </div>
   </div>
