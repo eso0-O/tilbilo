@@ -33,9 +33,9 @@
 }
 
 .tilbiloForm input {
-    background-color: #00000000;
-    border: 2px solid #fff;
-    color: #fff;
+    background-color: #00000000 !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
 }
 
 .formDiv {
@@ -59,7 +59,7 @@
 .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 .hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
 
-.btn {
+.hero .btn {
   background: var(--main-color); 
   color: #fff; 
   padding: 0.8rem 1.5rem;
