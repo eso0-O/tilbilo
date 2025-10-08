@@ -127,7 +127,7 @@ header .mycontainer {
 /* --- expertise Cards ----- */
 
 .carte-shadow {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .expertise-card {
@@ -144,7 +144,7 @@ header .mycontainer {
   box-shadowf: 0 8px 12px rgba(0,0,0,0.15);
   box-shadow: 0 0.135rem 0.23rem rgba(0, 0, 0, 0.075) !important;
 }
-
+/*box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;*/
 /* Scroll animation fade-in */
 .fade-in {
   opacity: 0;
