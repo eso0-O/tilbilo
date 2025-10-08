@@ -8,6 +8,18 @@
 
 /*--------------  Style.css pour page Contact ----------------------------------------- */
 
+/* Section Hero */
+.contact-hero {
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("/img/cabinet-data-bureau-home.jpg") center/cover no-repeat;
+  display: flex; justify-content: center; align-items: center;
+  color: #fff; text-align: center; padding: 0 1rem;
+}
+
+/* Texte hero*/
+.contact-hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+.contact-hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
 /* Bandeau header */
 .contact-header {
   background: url('/img/background-bureau-home.jpg') center/cover no-repeat;
