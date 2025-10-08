@@ -57,36 +57,31 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="/">
-        <img src="/img/logo-tilbilo.svg" alt="Tilbilo" width="auto" height="50">
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="/">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/a-propos">À propos</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/expertises">Expertises</a></li>
-            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-        </ul>
+  <!-- Header Navbar -->
+  <header class="header barre-de-nav">
+    <div class="mycontainer">
+      <div class="logo">
+        <a href="/"><img src="/img/logo-tilbilo.svg" alt="Logo TILBILO"></a>
       </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="/" class="active">Accueil</a></li>
+          <li><a href="/expertises">Expertises</a></li>
+          <li><a href="/a-propos">À propos</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
     </div>
-  </nav>
+  </header>
 
   <!-- Header -->
-  <header class="contact-header text-white text-center d-flex align-items-center">
+  <section class="contact-header text-white text-center d-flex align-items-center">
     <div class="container">
       <h1 class="display-4 fw-bold">Contactez-nous</h1>
       <p class="lead">Nous sommes à votre écoute pour toute question ou demande d’information.</p>
     </div>
-  </header>
+  </section>
 
     <!-- Formulaire -->
   <div class="container pt-5 align-items-center">
