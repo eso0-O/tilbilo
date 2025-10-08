@@ -6,41 +6,55 @@
 
 /*------- FIN VARIABLES GLOBALES ----- */
 
-/*--------------  Style.css pour page Contact ----------------------------------------- */
+/*------------------------ Style.css pour les des pages sauf home page BANDEAUX ------------------------------------------- */
+/*Style commun aux bandeaux*/
+/* Pour que le bandeau ne passe pas sous la barre nav */
+.bandeau {
+  margin-top: 80px; /* hauteur estimée du header */
+}
 
-/* Section Hero */
-.contact-hero {
+/* Texte bandeau*/
+.bandeau h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+.bandeau p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+
+/* Image BANDEAUX page CONTACT */
+.bandeau-contact {
   height: 40vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
               url("/img/cabinet-data-bureau-home.jpg") center/cover no-repeat;
   display: flex; justify-content: center; align-items: center;
   color: #fff; text-align: center; padding: 0 1rem;
 }
-/* Pour que le contenu ne passe pas sous la barre */
-.contact-hero {
-  margin-top: 80px; /* hauteur estimée du header */
-}
-/* Texte hero*/
-.contact-hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-.contact-hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
-/* Bandeau header */
-.contact-header {
-  background: url('/img/background-bureau-home.jpg') center/cover no-repeat;
+
+/* Image BANDEAUX page EXPERTISES */
+.bandeau-expertises {
   height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("/img/cabinet-data-bureau-home.jpg") center/cover no-repeat;
+  display: flex; justify-content: center; align-items: center;
+  color: #fff; text-align: center; padding: 0 1rem;
 }
 
-.contact-header h1 {
-  font-size: 3rem;
+/* Image BANDEAUX page A-PROPOS */
+.bandeau-apropos {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("/img/cabinet-data-bureau-home.jpg") center/cover no-repeat;
+  display: flex; justify-content: center; align-items: center;
+  color: #fff; text-align: center; padding: 0 1rem;
 }
 
-.contact-header p {
-  font-size: 1.25rem;
+/* Image BANDEAUX page MENTIONS LEGALES */
+.bandeau-mlegales {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("/img/cabinet-data-bureau-home.jpg") center/cover no-repeat;
+  display: flex; justify-content: center; align-items: center;
+  color: #fff; text-align: center; padding: 0 1rem;
 }
 
+
+/*--------------  Style.css pour page Contact ----------------------------------------- */
 .mesCordonnees {
   position: relative;
   padding-top: 100px !important ;
@@ -213,25 +227,7 @@ header .mycontainer {
 /*--------------------- FIN Style.css pour page Index ------------------------------------------- */
 
 
-/* style.css pour page EXPERTISES */
-
-/* Bandeau header */
-.services-header {
-  background: url('/img/background-bureau-home.jpg') center/cover no-repeat;
-  height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-}
-
-.services-header h1 {
-  font-size: 3rem;
-}
-
-.services-header p {
-  font-size: 1.25rem;
-}
+/*------------------------ Style.css pour page EXPERTISES ------------------------------------------- */
 
 /* Images des EXPERTISES */
 section img {
@@ -240,33 +236,19 @@ section img {
 }
 
 
-/* FIN style.css pour page EXPERTISES */
+/*--------------------- FIN Style.css pour page EXPERTISES ------------------------------------------- */
 
 
-/* style.css pour page Qui sommes-nous ? (A-propos) */
-/* Bandeau header */
-.about-header {
-  background: url('/img/background-bureau-home.jpg') center/cover no-repeat;
-  height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-}
-
-.about-header h1 {
-  font-size: 3rem;
-}
-
-.about-header p {
-  font-size: 1.25rem;
-}
+/*----------------------- Style.css pour page A-PROPOS ------------------------------------------- */
 
 /* Équipe */
 .team-member img {
   object-fit: cover;
   border: 3px solid var(--main-color);
 }
+
+/*--------------------- FIN Style.css pour page A-PROPOS ------------------------------------------- */
+
 
 /* style.css pour page Confirmation */
 
@@ -311,7 +293,7 @@ section img {
 
 /* FIN style.css pour page Confirmation */
 
-/* style.css pour page 404 */
+/*---------------------- Style.css pour page 404 ------------------------------------------- */
 .corps-404 {
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
@@ -333,10 +315,10 @@ section img {
   border-radius: 5px;
 }
 
-/* -------- FIN style.css pour page 404-------------------------- */
+/*--------------------- FIN Style.css pour page 404 ------------------------------------------- */
 
 
-/* ------------style.css pour section FOOTER------------------------- */
+/*--------------------- FIN Style.css pour page FOOTER ------------------------------------------- */
 /* Taille du logo */
 .footer-logo {
   max-height: 100px;
@@ -376,7 +358,7 @@ footer .social-icons a:hover i {
   }
 }
 
-/* FIN style.css pour section FOOTER */
+/*--------------------- FIN Style.css pour page FOOTER ------------------------------------------- */
 
 
 /* style.css pour Mention légale style titre */
