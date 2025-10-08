@@ -76,7 +76,7 @@ footer {
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
 
 body { 
-  color:#ec12bd ; /*#333; */
+  color:#000000 ; /*#333; */
   background-color: #fff; 
   line-height: 1.6;
   scroll-behavior: smooth;
