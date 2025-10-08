@@ -156,13 +156,19 @@
           <textarea class="form-control" id="message" name="message" rows="10"></textarea>
         </div>
         <div class="d-flex justify-content-center">
-          <button type="submit" class="btn mt-3 mb-5 w-45">Envoyer</button>
+          <button type="submit" class="btn btn-submit mt-3 mb-5 w-45">Envoyer</button>
         </div>
       </form>
 
       <script>
       document.getElementById("tilbiloForm").addEventListener("submit", async (e) => {
         e.preventDefault();
+
+        // Afficher "Envoi en cours..." et désactiver le bouton pour éviter plusieurs soumissions
+        const submitButton = document.querySelector('.btn-submit');
+        submitButton.disabled = true;
+        submitButton.textContent = "Envoi en cours, merci de patienter…";
+
         const form = e.target;
         const data = new FormData(form);
 
