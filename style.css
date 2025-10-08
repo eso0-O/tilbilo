@@ -75,7 +75,38 @@
 
 /*--------------------- Style.css pour page Index ------------------------------------------- */
 
-/* Section Hero */
+/* ============================
+   BARRE DE NAVIGATION TILBILO
+   ============================ */
+.header.barre-de-nav {
+  position: fixed;           /* rend la barre flottante */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;    /* couleur de fond (modifiable) */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+/* Quand la barre est masquée */
+.header.barre-de-nav.nav-hidden {
+  transform: translateY(-100%);
+  box-shadow: none;
+}
+
+/* Pour que le contenu ne passe pas sous la barre */
+.hero {
+  margin-top: 80px; /* hauteur estimée du header */
+}
+
+/* Optionnel : effet au scroll (ombre) */
+.header.barre-de-nav.scrolled {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Section Hero 
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -84,7 +115,7 @@
   color: #fff; text-align: center; padding: 0 1rem;
 }
 
-/* Texte hero*/
+/* Texte hero
 .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 .hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
 
@@ -103,7 +134,7 @@
   transform: translateY(-3px);
   background: #000;
 }
-
+*/
 /* Cards Services */
 .card img {
   height: 180px;
