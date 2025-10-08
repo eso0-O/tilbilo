@@ -102,7 +102,7 @@ header .mycontainer {
   display: flex; justify-content: space-between; align-items: center;
 }
 
-.logo img { height: 50 px; }
+.logo img { height: 40 px; }
 
 .nav ul { display: flex; list-style: none; gap: 1.5rem; }
 
