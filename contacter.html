@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact · TILBILO Consulting</title>
+  
+    <!-- SEO -->
+    <meta name="description" content="Tilbilo, cabinet de conseil expert en recherche et analyse de données, tableaux de bord et évaluation de projets.">
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="https://tilbilo.fr/contact">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="icon" href="/img/favicon-32x32.png" sizes="32x32" type="image/png"/>
+    <link rel="icon" href="/img/favicon-16x16.png" sizes="16x16" type="image/png"/>
+
+    <!-- Couleur de la barre du navigateur (Android) -->
+    <meta name="theme-color" content="#1077a0">
+
+    <!-- Theme color adaptative (mode clair/sombre) -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#1077a0">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+    
+    <!-- Pour Safari iOS (mode web app) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact · TILBILO Consulting">
+    <meta property="og:description" content="Tilbilo, cabinet de Conseil. Exploitez la valeur stratégique de vos données grâce à notre expertise en recherche et analyse.">
+    <meta property="og:image" content="https://tilbilo.fr/img/TILBILO-logo-1200x630.png">
+    <meta property="og:url" content="https://tilbilo.fr/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact · TILBILO Consulting">
+    <meta name="twitter:description" content="Tilbilo, Cabinet de Conseil. Exploitez la valeur stratégique de vos données grâce à notre expertise en recherche et analyse.">
+    <meta name="twitter:image" content="https://tilbilo.fr/img/TILBILO-logo-1200x630.png">
+
+    <!--  Icône utilisée quand un utilisateur ajoute la page à son écran d’accueil sur un iPhone/iPad. -->
+    <link rel="apple-touch-icon" sizes="180x180"
+    href="https://tilbilo.fr/img/TILBILO-logo-180x180.png">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a62d890dba.js" crossorigin="anonymous"></script>
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="/">
+        <img src="/img/logo-tilbilo.svg" alt="Tilbilo" width="auto" height="50">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="/">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/a-propos">À propos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/expertises">Expertises</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="contact-header text-white text-center d-flex align-items-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Contactez-nous</h1>
+      <p class="lead">Nous sommes à votre écoute pour toute question ou demande d’information.</p>
+    </div>
+  </header>
+
+    <!-- Formulaire -->
+  <div class="container-fluid pt-5 align-items-center text-center">
+    <div class="container">
+    <h2 class="fw-bold mb-1">Formulaire</h2>
+    <p class="fw-bold mb-5">Pour toute demande concernant nos expertises ou pour obtenir des informations complémentaires sur le cabinet, merci de compléter le formulaire ci-dessous. Nous vous répondrons dans les plus brefs délais.</p>
+    </div>
+    <div> <!-- ratio Bootstrap pour responsive -->
+      <!-- modify this form HTML and place wherever you want your form -->
+      <form
+        action="https://formspree.io/f/mzzjayga"
+        method="POST"
+        enctype="multipart/form-data">
+        <label>Nom :<input type="email" name="email">
+        </label>
+        <label>Prénom<textarea name="message"></textarea>
+        </label>
+        <label>Email :<input type="email" name="email">
+        </label>
+        <label>
+          Your file:
+          <input type="file" name="upload">
+        </label>
+        <button type="submit">Send</button>
+      </form>
+
+      <form 
+        action="https://formspree.io/f/mzzjayga"
+        method="POST"
+        enctype="multipart/form-data">
+
+        <div class="form-group mb-3">
+          <label class="form-label" for="prenom">Prénom
+            <span class="text-danger" title="Ce champ est requis.">*</span>
+          </label>
+          <input type="text" class="form-control" id="prenom" name="prenom" required>
+        </div>
+
+        <div class="form-group mb-3">
+          <label class="form-label" for="nom">Nom
+            <span class="text-danger" title="Ce champ est requis.">*</span>
+          </label>
+          <input type="text" class="form-control" id="nom" name="nom" required>
+        </div>
+
+        <div class="form-group mb-3">
+          <label class="form-label" for="telephone">Numéro de téléphone
+            <span class="text-danger" title="Ce champ est requis.">*</span>
+          </label>
+          <input type="tel" class="form-control" id="telephone" name="telephone" required>
+          <p>Veuillez saisir le numéro de téléphone associé à votre compte WhatsApp.</p>
+        </div>
+
+        <div class="form-group mb-3">
+          <label class="form-label" for="email">Adresse e-mail</label>
+          <input type="email" class="form-control" id="email" name="email">
+          <p><font size="2">Veuillez entrer une adresse e-mail valide (facultatif).</font></p>
+        </div>
+        <h4 class="mt-4">Justificatif de résidence</h4>
+        <p><font size="2">Nous avons besoin d’un justificatif prouvant que vous êtes<strong> Sénégalais·e résidant·e à Amiens (ou dans les départements de l’Aisne [02], de l’Oise [60] ou de la Somme [80])</strong>. Veuillez téléverser l’un des documents suivants :</font></p>
+        <ul>
+        <font size="2">
+          <li><strong>les étudiants :</strong> une carte d’étudiant, un certificat d’inscription ou un accord préalable d'inscription.</li>
+          <li><strong>pour les non-étudiants :</strong> un document justifiant votre résidence dans la Somme, l'Aisne ou l'Oise (exemple : facture récente, attestation de logement, quittance de loyer, ou justificatif d’identité avec adresse).</li>
+        </font>
+        </ul>
+        <p class="text-danger"> <font size="2"><em>Ces documents resteront strictement confidentiels et ne seront utilisés qu’à des fins de vérification dans le cadre de votre inscription au groupe WhatsApp de l’ASA.</em></font></p>
+        <div class="form-group mb-3">
+          <label class="form-label" for="justificatif">Téléverser le justificatif de résidence
+            <span class="text-danger" title="Ce champ est requis.">*</span>
+          </label>
+          <input type="file" class="form-control" id="justificatif" name="justificatif" required>
+        </div>
+
+        <div class="form-group mb-3 mt-4">
+          <label class="form-label" for="commentaires">Commentaires ou précisions (facultatif)</label>
+          <textarea class="form-control" id="commentaires" name="commentaires"></textarea>
+          <p><font size="2">Si vous souhaitez ajouter une précision, utilisez cet espace.</font></p>
+
+        <button type="submit" class=" btn-submit mt-3 mb-5 btn btn-primary btn-block w-100">Envoyer</button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Nos Coordonnées -->
+  <div class="container-fluid py-5 align-items-center text-center bg-light mesCordonnees">
+    <h2 class="fw-bold mb-4">Nos coordonnées</h2>
+    <ul class="list-unstyled">
+      <li class="mb-3"><strong>Adresse :</strong> 80000 Amiens, France</li>
+      <li class="mb-3"><strong>Téléphone :</strong> <a href="tel:+33 1 23 45 67 80" class="text-decoration-none text-dark">+33 1 23 45 67 80</a></li>
+      <li class="mb-3"><strong>Email :</strong> <a href="mailto:contact@tilbilo.fr" class="text-decoration-none text-dark">contact@tilbilo.fr</a></li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5">
+    <div class="container">
+      <div class="row">
+
+        <!-- Colonne 1 : Logo + À propos -->
+        <div class="col-md-4 mb-4 d-flex flex-column align-items-start">
+          <a href="/">
+            <img src="/img/TILBILO-logo-100.png" alt="Logo Tilbilo" class="footer-logo mb-3">
+          </a>
+          <h5 class="fw-bold">À propos</h5>
+          <p>TILBILO Consulting. Notre équipe accompagne les organisations dans le conseil opérationnel et stratégique.</p>
+          <p>Nos métiers : Recherche et Analyse de données, Tableaux de bord, Études et Enquêtes, Évaluation de projets et programmes.</p>
+        </div>
+
+        <!-- Colonne 2 : Nos expertises -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Nos expertises</h5>
+          <ul class="list-unstyled">
+            <li><a href="/expertises#recherche" class="text-light text-decoration-none">Recherche & Analyse de données</a></li>
+            <li><a href="/expertises#tableaux" class="text-light text-decoration-none">Tableaux de bord</a></li>
+            <li><a href="/expertises#etudes" class="text-light text-decoration-none">Études et enquêtes</a></li>
+            <li><a href="/expertises#evaluation" class="text-light text-decoration-none">Évaluation de projets</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : Nous contacter -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Nous contacter</h5>
+          <p><a href="mailto:contact@tilbilo.fr" class="text-light text-decoration-none"><i class="fa-solid fa-envelope"></i> contact@tilbilo.fr</a></p>
+          <p><a href="tel:+33123456780" class="text-light text-decoration-none"><i class="fa-solid fa-phone"></i> +33 1 23 45 67 80</a></p>
+          <p><i class="fa-solid fa-location-dot"></i> Amiens (80), France</p>
+
+          <h5 class="fw-bold mt-3">Nous suivre</h5>
+          <div class="social-icons">
+            <a href="https://x.com/tilbilo" target="_blank" class="text-light me-3"><i class="fab fa-square-x-twitter fa-lg"></i></a>
+            <a href="https://www.linkedin.com/company/tilbilo/" target="_blank" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://www.instagram.com/tilbilo/" target="_blank" class="text-light"><i class="fab fa-brands fa-square-instagram fa-lg"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bas du footer -->
+    <div class="bg-secondary text-center py-3 mt-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center">
+        <p class="mb-0">© 2025 TILBILO - <a href="/mentions-legales" class="text-light text-decoration-none">Mentions Légales</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
