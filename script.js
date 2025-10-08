@@ -31,3 +31,16 @@ window.addEventListener('scroll', () => {
   }
   lastScrollTop = scrollTop;
 });
+
+
+//✅ Étape 3 : (optionnel mais recommandé) activer automatiquement le lien actif via JS
+
+// Met à jour automatiquement le lien actif selon l'URL
+const navLinks = document.querySelectorAll('.nav a');
+const currentPath = window.location.pathname;
+
+navLinks.forEach(link => {
+  if (link.getAttribute('href') === currentPath) {
+    link.classList.add('active');
+  }
+});

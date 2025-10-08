@@ -370,3 +370,53 @@ ul {
 
 /* ------ FIN Style des point ------*/
 
+/*✅ Étape 2 : Ajouter le style CSS du trait coloré */
+/* Style des liens du menu */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #001f3a;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+/* Lien survolé */
+.nav a:hover {
+  color: #f7a824;
+}
+
+/* Trait coloré (soulignement animé) */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #f7a824;
+  transition: width 0.3s ease;
+}
+
+/* Au survol */
+.nav a:hover::after {
+  width: 60px;
+}
+
+/* Page active */
+.nav a.active::after {
+  width: 60px;
+  height: 2px;
+  background-color: #f7a824 !important;
+}
+
+/* FIN ✅ Étape 2 : Ajouter le style CSS du trait coloré*/
