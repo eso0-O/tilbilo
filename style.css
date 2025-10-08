@@ -142,7 +142,7 @@ header .mycontainer {
 .expertise-card:hover {
   transform: translateY(-7px);
   box-shadowf: 0 8px 12px rgba(0,0,0,0.15);
-  box-shadow: 0 0.175rem 0.35rem rgba(0, 0, 0, 0.095) !important;
+  box-shadow: 0 0.200rem 0.40rem rgba(0, 0, 0, 0.150) !important;
 }
 /*box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;*/
 /* Scroll animation fade-in */
