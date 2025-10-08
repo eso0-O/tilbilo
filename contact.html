@@ -160,29 +160,41 @@
         </div>
       </form>
 
+      <!--   SCRIPT JS-->
       <script>
       document.getElementById("tilbiloForm").addEventListener("submit", async (e) => {
         e.preventDefault();
 
-        // Afficher "Envoi en cours..." et désactiver le bouton pour éviter plusieurs soumissions
-        const submitButton = document.querySelector('.btn-submit');
+        const form = e.target;
+        const submitButton = form.querySelector(".btn-submit"); // bouton à cibler (classe personnalisée)
+        const originalText = submitButton.textContent; // sauvegarde du texte d’origine
+
+        // 🔒 Désactive le bouton et affiche un message d’attente
         submitButton.disabled = true;
         submitButton.textContent = "Envoi en cours, merci de patienter…";
 
-        const form = e.target;
-        const data = new FormData(form);
+        try {
+          const data = new FormData(form);
+          const response = await fetch(form.action, { method: "POST", body: data });
+          const result = await response.json();
 
-        const response = await fetch(form.action, { method: "POST", body: data });
-        const result = await response.json();
-
-        if (result.result === "success") {
-          alert("✅ Merci ! Votre message a été envoyé avec succès.");
-          form.reset();
-        } else {
-          alert("❌ Une erreur est survenue lors de l’envoi de votre message.\nMerci de réessayer dans quelques instants");
+          if (result.result === "success") {
+            alert("✅ Merci ! Votre message a été envoyé avec succès.");
+            form.reset();
+          } else {
+            alert("❌ Une erreur est survenue lors de l’envoi du message.\nMerci de réessayer dans quelques instants.");
+          }
+        } catch (error) {
+          alert("⚠️ Erreur réseau ou serveur. Veuillez réessayer plus tard.");
+          console.error(error);
+        } finally {
+          // 🔁 Réactive le bouton et restaure son texte d’origine
+          submitButton.disabled = false;
+          submitButton.textContent = originalText;
         }
       });
       </script>
+
       <!---- alert("❌ Erreur : " + result.message); -->
 
     </div>
