@@ -91,7 +91,7 @@ body {
 
 header.header {
   background: #ffffff;
-  color: #000000;
+  color: #ffffff;
   position: fixed;
   top: 0; width: 100%;
   z-index: 1000;
@@ -102,12 +102,12 @@ header .mycontainer {
   display: flex; justify-content: space-between; align-items: center;
 }
 
-.logo img { height: 70px; }
+.logo img { height: 65px; }
 
 .nav ul { display: flex; list-style: none; gap: 1.5rem; }
 
 .nav a {
-  color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s;
+  color: var(--main-color); text-decoration: none; font-weight: 500; transition: color 0.3s;
 }
 .nav a:hover { color: #1713e6; }
 
