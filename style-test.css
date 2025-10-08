@@ -30,7 +30,7 @@ header .container {
 
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-bg.jpg') center/cover;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/lilbilo-logo-mockup-02.jpg') center/cover;
   display: flex; justify-content: center; align-items: center;
   color: #fff; text-align: center; padding: 0 1rem;
 }
