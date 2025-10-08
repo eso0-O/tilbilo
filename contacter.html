@@ -144,7 +144,14 @@
           <label class="form-label" for="expertise">Expertise souhaitée&nbsp;
             <span class="text-danger" title="Ce champ est requis.">*</span> :
           </label>
-          <input type="text" class="form-control" id="expertise" name="expertise" required>
+          <select class="form-select" id="expertise" name="expertise" required>
+            <option value="" selected disabled>— Sélectionnez le domaine d'expertise souhaité —</option>
+            <option value="Analyse de données">Analyse de données</option>
+            <option value="Évaluation de projets">Évaluation de projets</option>
+            <option value="Tableaux de bord">Tableaux de bord</option>
+            <option value="Études et enquêtes">Études et enquêtes</option>
+            <option value="Autre">Autre</option>
+          </select>
         </div>
 
         <div class="form-group mb-3">
