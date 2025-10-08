@@ -16,7 +16,10 @@
   display: flex; justify-content: center; align-items: center;
   color: #fff; text-align: center; padding: 0 1rem;
 }
-
+/* Pour que le contenu ne passe pas sous la barre */
+.contact-hero {
+  margin-top: 80px; /* hauteur estimée du header */
+}
 /* Texte hero*/
 .contact-hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 .contact-hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
