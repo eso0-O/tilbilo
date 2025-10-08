@@ -76,8 +76,7 @@ footer {
 }
 
 
-
-/***** --------------- -----------------------------*/
+/***** --------------- from new look -----------------------------*/
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
 
 body { 
@@ -114,8 +113,6 @@ header .mycontainer {
 
 .menu-toggle { display: none; cursor: pointer; font-size: 1.8rem; }
 
-
-
 /* Navbar */
 .navbar-brand55 {
   letter-spacing: 1px;
@@ -135,11 +132,11 @@ header .mycontainer {
 .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 .hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
 .btn {
-  background: #f7a824; color: #fff; padding: 0.8rem 1.5rem;
+  background: var(--main-color); color: #fff; padding: 0.8rem 1.5rem;
   border: none; border-radius: 5px; text-decoration: none; font-weight: bold;
   transition: background 0.3s;
 }
-.btn:hover { background: #d78e1a; }
+.btn:hover { background: #d35106; }
 
 .section { padding: 5rem 0; text-align: center; }
 
@@ -152,26 +149,12 @@ header .mycontainer {
 
 .card {
   background: #f5f5f5; border-radius: 10px; padding: 2rem;
-  transition: transform 0.3s;
+  transition: transform 0.4s;
 }
 .card:hover { transform: translateY(-5px); }
 
 .about { background: #f7f7f7; }
 
-.contact form {
-  display: flex; flex-direction: column; gap: 1rem;
-  width: 90%; max-width: 500px; margin: 2rem auto;
-}
-.contact input, .contact textarea {
-  padding: 0.8rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem;
-}
-.contact button { width: fit-content; align-self: center; }
-
-.footer {
-  background: #15c010; color: #fff; text-align: center; padding: 1rem 0;
-  font-size: 0.9rem;
-}
-.footer a { color: var(--main-color); text-decoration: none; }
 
 @media (max-width: 768px) {
   .nav ul { display: none; flex-direction: column; background: #ec12bd; padding: 1rem; }
@@ -198,10 +181,6 @@ header .mycontainer {
 
 /* --- FIN Cards ----- */
 
-/* Footer */
-footer {
-  font-size: 0.9rem;
-}
 
 /* Scroll animation fade-in */
 .fade-in {
@@ -214,7 +193,7 @@ footer {
 }
 
 
-/* FIN style.css pour page Index */
+/*-------------------- FIN style.css pour page Index -------------------------------------- */
 
 
 /* style.css pour page EXPERTISES */
