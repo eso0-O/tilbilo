@@ -139,8 +139,6 @@ header .mycontainer {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* --- FIN expertise Cards ----- */
-
 /* Scroll animation fade-in */
 .fade-in {
   opacity: 0;
@@ -150,7 +148,7 @@ header .mycontainer {
   opacity: 1;
   transform: translateY(0);
 }
-
+/* --- FIN expertise Cards ----- */
 
 /*--------------------- FIN Style.css pour page Index ------------------------------------------- */
 
