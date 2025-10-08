@@ -44,6 +44,7 @@
 
 #tilbiloForm .btn {
   background: #333; 
+  align-items: center;
   color: #fff; 
   padding: 0.8rem 1.5rem;
   border: none; 
@@ -53,7 +54,7 @@
   transition: background-color .3s ease, transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-#tilbiloForm .btn-tilbilo:hover {
+#tilbiloForm .btn:hover {
   transform: translateY(-2px);
   background: #000;
 }
