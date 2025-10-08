@@ -4,14 +4,13 @@
   --main-padding: 20px;
 }
 
-/*------- VARIABLES GLOBALES ----- */
+/*------- FIN VARIABLES GLOBALES ----- */
 
-/* style.css pour page Contact */
+/*--------------  Style.css pour page Contact ----------------------------------------- */
 
 /* Bandeau header */
 .contact-header {
   background: url('/img/background-bureau-home.jpg') center/cover no-repeat;
-  background2: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
   height: 40vh;
   display: flex;
   align-items: center;
@@ -33,10 +32,9 @@
   padding-bottom: 100px !important ;
 }
 
+/*----------------- FIN Style.css pour page Contact ----------------------------------------- */
 
-/* FIN style.css pour page Contact */
-
-/* style.css pour page Index */
+/*--------------------- Style.css pour page Index ------------------------------------------- */
 
 /* Section Hero */
 .hero {
@@ -62,19 +60,6 @@
 footer {
   font-size: 0.9rem;
 }
-
-.bouton-chong {
-  background-color: var(--main-color);
-  color: white;
-  border: none;
-  align-items: center;
-  justify-content: center;
-}
-.bouton-chong:hover {
-  background-color: #53add1;
-  color: #ddd;
-}
-
 
 /***** --------------- from new look -----------------------------*/
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
@@ -128,7 +113,6 @@ header .mycontainer {
   color: #fff; text-align: center; padding: 0 1rem;
 }
 
-
 .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 .hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
 .btn {
@@ -164,7 +148,7 @@ header .mycontainer {
 
 /*-------------***** -------------------------------------- new*/
 
-/* --- Cards ----- */
+/* --- expertise Cards ----- */
 .expertise-card {
   transition: transform 0.3s, box-shadow 0.3s;
   opacity: 0;
@@ -179,8 +163,7 @@ header .mycontainer {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* --- FIN Cards ----- */
-
+/* --- FIN expertise Cards ----- */
 
 /* Scroll animation fade-in */
 .fade-in {
@@ -193,7 +176,7 @@ header .mycontainer {
 }
 
 
-/*-------------------- FIN style.css pour page Index -------------------------------------- */
+/*--------------------- FIN Style.css pour page Index ------------------------------------------- */
 
 
 /* style.css pour page EXPERTISES */
