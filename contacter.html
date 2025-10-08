@@ -136,8 +136,7 @@
           <label class="form-label" for="telephone">Numéro de téléphone
             <span class="text-danger" title="Ce champ est requis.">*</span>
           </label>
-          <input type="tel" class="form-control" id="telephone" name="telephone" required>
-          <p>Veuillez saisir le numéro de téléphone associé à votre compte WhatsApp.</p>
+          <input type="tel" class="form-control" id="telephone" name="telephone">
         </div>
 
         <div class="form-group mb-3">
@@ -145,28 +144,20 @@
           <input type="email" class="form-control" id="email" name="email">
           <p><font size="2">Veuillez entrer une adresse e-mail valide (facultatif).</font></p>
         </div>
-        <h4 class="mt-4">Justificatif de résidence</h4>
-        <p><font size="2">Nous avons besoin d’un justificatif prouvant que vous êtes<strong> Sénégalais·e résidant·e à Amiens (ou dans les départements de l’Aisne [02], de l’Oise [60] ou de la Somme [80])</strong>. Veuillez téléverser l’un des documents suivants :</font></p>
-        <ul>
-        <font size="2">
-          <li><strong>les étudiants :</strong> une carte d’étudiant, un certificat d’inscription ou un accord préalable d'inscription.</li>
-          <li><strong>pour les non-étudiants :</strong> un document justifiant votre résidence dans la Somme, l'Aisne ou l'Oise (exemple : facture récente, attestation de logement, quittance de loyer, ou justificatif d’identité avec adresse).</li>
-        </font>
-        </ul>
-        <p class="text-danger"> <font size="2"><em>Ces documents resteront strictement confidentiels et ne seront utilisés qu’à des fins de vérification dans le cadre de votre inscription au groupe WhatsApp de l’ASA.</em></font></p>
+        <h4 class="mt-4">Joindre un fichier</h4>
         <div class="form-group mb-3">
-          <label class="form-label" for="justificatif">Téléverser le justificatif de résidence
+          <label class="form-label" for="fichier-joint">Téléverser le fichier
             <span class="text-danger" title="Ce champ est requis.">*</span>
           </label>
-          <input type="file" class="form-control" id="justificatif" name="justificatif" required>
+          <input type="file" class="form-control" id="fichier-joint" name="fichier-joint">
         </div>
 
         <div class="form-group mb-3 mt-4">
-          <label class="form-label" for="commentaires">Commentaires ou précisions (facultatif)</label>
-          <textarea class="form-control" id="commentaires" name="commentaires"></textarea>
-          <p><font size="2">Si vous souhaitez ajouter une précision, utilisez cet espace.</font></p>
+          <label class="form-label" for="message">Votre message</label>
+          <textarea class="form-control" id="message" name="message"></textarea>
+        </div>
 
-        <button type="submit" class=" btn-submit mt-3 mb-5 btn btn-primary btn-block w-100">Envoyer</button>
+        <button type="submit" class=" btn-submit mt-3 mb-5 btn btn-primary btn-block w-35">Envoyer</button>
       </form>
 
     </div>
