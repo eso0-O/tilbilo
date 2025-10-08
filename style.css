@@ -104,24 +104,6 @@ header .mycontainer {
 
 .logo img { height: 65px; }
 
-.nav ul { display: flex; list-style: none; gap: 1.5rem; }
-
-.nav a {
-  color: var(--main-color); text-decoration: none; font-weight: 500; transition: color 0.3s;
-}
-.nav a:hover { color: #000000; }
-
-.menu-toggle { display: none; cursor: pointer; font-size: 1.8rem; }
-
-#about { background: #f8f9fa; }
-
-
-@media (max-width: 768px) {
-  .nav ul { display: none; flex-direction: column; background: #fff; padding: 1rem; }
-  .nav.active ul { display: flex; }
-  .menu-toggle { display: block; color: var(--main-color); }
-}
-
 /*-------------***** -------------------------------------- new*/
 
 /* --- expertise Cards ----- */
@@ -372,29 +354,33 @@ ul {
 
 /*✅ Étape 2 : Ajouter le style CSS du trait coloré */
 /* Style des liens du menu */
+
+/* ======================
+   NAVIGATION PRINCIPALE
+   ====================== */
+
 .nav ul {
-  list-style: none;
   display: flex;
-  gap: 2rem;
+  list-style: none;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
 }
 
 .nav a {
-  text-decoration: none;
-  color: #001f3a;
-  font-weight: 500;
   position: relative;
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
   padding-bottom: 5px;
-  transition: color 0.3s ease;
 }
 
-/* Lien survolé */
 .nav a:hover {
-  color: #f7a824;
+  color: #000;
 }
 
-/* Trait coloré (soulignement animé) */
+/* --- Trait soulignement (desktop + mobile) --- */
 .nav a::after {
   content: "";
   position: absolute;
@@ -407,16 +393,61 @@ ul {
   transition: width 0.3s ease;
 }
 
-/* Au survol */
 .nav a:hover::after {
   width: 60px;
 }
 
-/* Page active */
 .nav a.active::after {
   width: 60px;
   height: 2px;
   background-color: #f7a824 !important;
 }
+
+/* --- Bouton menu burger --- */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+/* ======================
+   VERSION MOBILE
+   ====================== */
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    gap: 1rem;
+    position: absolute;
+    top: 70px; /* à ajuster selon la hauteur de ton header */
+    right: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.active ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: var(--main-color);
+  }
+
+  /* Correction : le trait ne doit pas être centré sous le texte sur mobile */
+  .nav a::after {
+    left: 0;
+    transform: none;
+  }
+
+  .nav a:hover::after,
+  .nav a.active::after {
+    width: 40px;
+    background-color: #f7a824 !important;
+  }
+}
+
 
 /* FIN ✅ Étape 2 : Ajouter le style CSS du trait coloré*/
