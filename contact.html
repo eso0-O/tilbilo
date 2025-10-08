@@ -161,17 +161,18 @@
       </form>
 
       <!--   SCRIPT JS-->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
       <script>
       document.getElementById("tilbiloForm").addEventListener("submit", async (e) => {
         e.preventDefault();
 
         const form = e.target;
-        const submitButton = form.querySelector(".btn-submit"); // bouton à cibler (classe personnalisée)
-        const originalText = submitButton.textContent; // sauvegarde du texte d’origine
+        const submitButton = form.querySelector(".btn-submit");
+        const originalText = submitButton.textContent;
 
-        // 🔒 Désactive le bouton et affiche un message d’attente
         submitButton.disabled = true;
-        submitButton.textContent = "Envoi en cours, merci de patienter…";
+        submitButton.textContent = "Envoi en cours…";
 
         try {
           const data = new FormData(form);
@@ -179,21 +180,35 @@
           const result = await response.json();
 
           if (result.result === "success") {
-            alert("✅ Merci ! Votre message a été envoyé avec succès.");
+            Swal.fire({
+              icon: "success",
+              title: "Message envoyé !",
+              text: "Merci, votre message a bien été transmis à l’équipe TILBILO.",
+              confirmButtonColor: "#f7a824"
+            });
             form.reset();
           } else {
-            alert("❌ Une erreur est survenue lors de l’envoi du message.\nMerci de réessayer dans quelques instants.");
+            Swal.fire({
+              icon: "error",
+              title: "Erreur",
+              text: "Une erreur est survenue. Merci de réessayer dans quelques instants.",
+              confirmButtonColor: "#f7a824"
+            });
           }
         } catch (error) {
-          alert("⚠️ Erreur réseau ou serveur. Veuillez réessayer plus tard.");
-          console.error(error);
+          Swal.fire({
+            icon: "warning",
+            title: "Problème réseau",
+            text: "Impossible d’envoyer le message pour le moment. Vérifiez votre connexion.",
+            confirmButtonColor: "#f7a824"
+          });
         } finally {
-          // 🔁 Réactive le bouton et restaure son texte d’origine
           submitButton.disabled = false;
           submitButton.textContent = originalText;
         }
       });
       </script>
+
 
       <!---- alert("❌ Erreur : " + result.message); -->
 
