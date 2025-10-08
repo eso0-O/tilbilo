@@ -389,18 +389,18 @@ ul {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #f7a824;
+  background-color: var(--main-color);
   transition: width 0.3s ease;
 }
 
 .nav a:hover::after {
-  width: 60px;
+  width: 70px;
 }
 
 .nav a.active::after {
-  width: 60px;
+  width: 70px;
   height: 2px;
-  background-color: #f7a824 !important;
+  background-color: var(--main-color) !important;
 }
 
 /* --- Bouton menu burger --- */
@@ -445,7 +445,7 @@ ul {
   .nav a:hover::after,
   .nav a.active::after {
     width: 40px;
-    background-color: #f7a824 !important;
+    background-color: var(--main-color) !important;
   }
 }
 
