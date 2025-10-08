@@ -2,7 +2,7 @@
 
 body { color: #333; background-color: #fff; line-height: 1.6; }
 
-.5container { width: 90%; margin: auto; max-width: 1200px; }
+.mycontainer { width: 90%; margin: auto; max-width: 1200px; }
 
 header.header {
   background: #001f3a;
