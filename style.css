@@ -301,7 +301,9 @@ section img {
   padding: 50px;
   margin-top: 80px; /* hauteur estimée du header */
   height: 100vh;
-  display: flex; justify-content: center; align-items: center;
+  cdisplay: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 .h1-404 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
