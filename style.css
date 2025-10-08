@@ -32,6 +32,16 @@
   padding-bottom: 100px !important ;
 }
 
+.tilbiloForm input {
+    background-color: #00000000;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.formDiv {
+  background-color: var(--main-color;)
+}
+
 /*----------------- FIN Style.css pour page Contact ----------------------------------------- */
 
 /*--------------------- Style.css pour page Index ------------------------------------------- */
