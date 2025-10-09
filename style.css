@@ -351,7 +351,7 @@ footer .social-icons a i {
 
 /* Pas de décoration par défaut */
 footer a {
-  color: rgba(var(--tilbilo-color-rg), var(--bs-link-opacity, 1)) !important;
+  color: (var(--tilbilo-color-rg), var(--bs-link-opacity, 1)) !important;
   text-decoration: none !important;
 }
 
@@ -359,8 +359,9 @@ footer a {
 footer a:hover {
   color: rgba(var(--tilbilo-color-rg), 1) !important; /* couleur de texte */
   text-decoration: underline !important;            /* soulignement */
-  -webkit-text-decoration-color: rgba(var(--tilbilo-color-rg), 1) !important;
-  text-decoration-color: rgba(var(--tilbilo-color-rg), 1) !important;
+  -webkit-text-decoration-color: var(--tilbilo-color-rg) !important;
+  text-decoration-color: var(--tilbilo-color-rg) !important;
+  text-underline-offset: 0.25em !important;
 }
 
 
