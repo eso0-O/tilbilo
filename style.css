@@ -362,7 +362,7 @@ footer .social-icons a i {
 /* Lien footer : pas de déco par défaut */
 .lienSurvolTrait a {
   position: relative; /* nécessaire pour ::after */
-  color: var(--tilbilo-color-jn);
+  colorX: var(--tilbilo-color-jn) !;
   text-decoration: none !important;
   transition: color 0.3s ease;
   padding-bottom: 3px; /* espace pour le trait */
@@ -370,8 +370,7 @@ footer .social-icons a i {
 
 /* Couleur texte au survol */
 .lienSurvolTrait a:hover {
-  color: var(--tilbilo-color-jn); /* couleur de texte hover */
-  text-decoration: underline !important;            /* soulignement */
+  color: var(--tilbilo-color-jn) !important; /* couleur de texte hover */
   -webkit-text-decoration-color: var(--tilbilo-color-jn) !important;
   text-decoration-color: var(--tilbilo-color-jn) !important;
 }
