@@ -349,19 +349,52 @@ footer .social-icons a i {
   }
 }
 
-/* Pas de décoration par défaut */
+/* Pas de décoration par défaut (lien du footer) 
 footer a {
   text-decoration: none !important;
 }
 
-/* Lorsque survolé */
+/* Lorsque survolé 
 footer a:hover {
-  color: var(--tilbilo-color-rg) !important; /* couleur de texte */
-  text-decoration: underline !important;            /* soulignement */
+  color: var(--tilbilo-color-rg) !important; /* couleur de texte 
+  text-decoration: underline !important;            /* soulignement 
   -webkit-text-decoration-color: var(--tilbilo-color-rg) !important;
   text-decoration-color: var(--tilbilo-color-rg) !important;
   text-underline-offset: 0.375em !important;
+}*/
+
+/* Lien footer : pas de déco par défaut */
+footer a {
+  position: relative; /* nécessaire pour ::after */
+  color: var(--tilbilo-color-jn);
+  text-decoration: none !important;
+  transition: color 0.3s ease;
+  padding-bottom: 3px; /* espace pour le trait */
 }
+
+/* Couleur texte au survol */
+footer a:hover {
+  color: var(--tilbilo-color-jn, #000); /* couleur de texte hover */
+}
+
+/* Soulignement animé avec ::after */
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--tilbilo-color-rg);
+  transition: width 0.3s ease;
+}
+
+/* Au survol : le trait s’anime */
+footer a:hover::after {
+  width: 60%; /* ou fixe : 70px si tu veux la même logique que .nav */
+}
+
 
 
 /*--------------------- FIN Style.css pour FOOTER ------------------------------------------- */
