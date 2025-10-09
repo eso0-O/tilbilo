@@ -504,43 +504,7 @@ ul {
 
 /* ======================
    VERSION MOBILE
-   ====================== *//*
-@media (max-width: 768px) {
-  .nav ul {
-    display: none;
-    flex-direction: column;
-    background: #fff;
-    padding: 1rem;
-    gap: 1rem;
-    position: absolute;
-    top: 70px; /* à ajuster selon la hauteur de ton header *
-    right: 0;
-    left: 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav.active ul {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-    color: var(--main-color);
-  }
-
-  /* Correction : le trait ne doit pas être centré sous le texte sur mobile *
-  .nav a::after {
-    left: 0;
-    transform: none;
-  }
-
-  .nav a:hover::after,
-  .nav a.active::after {
-    width: 40px;
-    background-color: var(--main-color) !important;
-  }
-}*/
-
+   ====================== */
 @media (max-width: 768px) {
   .nav ul {
     display: none;
