@@ -351,7 +351,6 @@ footer .social-icons a i {
 
 /* Pas de décoration par défaut */
 footer a {
-  color: (var(--tilbilo-color-rg), var(--bs-link-opacity, 1)) !important;
   text-decoration: none !important;
 }
 
