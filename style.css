@@ -504,7 +504,7 @@ ul {
 
 /* ======================
    VERSION MOBILE
-   ====================== */
+   ====================== *//*
 @media (max-width: 768px) {
   .nav ul {
     display: none;
@@ -513,7 +513,7 @@ ul {
     padding: 1rem;
     gap: 1rem;
     position: absolute;
-    top: 70px; /* à ajuster selon la hauteur de ton header */
+    top: 70px; /* à ajuster selon la hauteur de ton header *
     right: 0;
     left: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -528,10 +528,57 @@ ul {
     color: var(--main-color);
   }
 
-  /* Correction : le trait ne doit pas être centré sous le texte sur mobile */
+  /* Correction : le trait ne doit pas être centré sous le texte sur mobile *
   .nav a::after {
     left: 0;
     transform: none;
+  }
+
+  .nav a:hover::after,
+  .nav a.active::after {
+    width: 40px;
+    background-color: var(--main-color) !important;
+  }
+}*/
+
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    gap: 0.5rem;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* ✅ centrer le contenu */
+  }
+
+  .nav.active ul {
+    display: flex;
+  }
+
+  .nav li {
+    width: 100%; /* ✅ chaque élément occupe toute la ligne */
+  }
+
+  .nav a {
+    display: block; /* ✅ le lien remplit tout le li */
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: var(--main-color);
+  }
+
+  .nav a::after {
+    left: 50%; /* ✅ recalcule la position du trait si tu veux le garder centré */
+    transform: translateX(-50%);
   }
 
   .nav a:hover::after,
