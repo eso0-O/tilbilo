@@ -357,11 +357,11 @@ footer a {
 
 /* Lorsque survolé */
 footer a:hover {
-  color: rgba(var(--tilbilo-color-rg), 1) !important; /* couleur de texte */
+  color: var(--tilbilo-color-rg) !important; /* couleur de texte */
   text-decoration: underline !important;            /* soulignement */
   -webkit-text-decoration-color: var(--tilbilo-color-rg) !important;
   text-decoration-color: var(--tilbilo-color-rg) !important;
-  text-underline-offset: 0.25em !important;
+  text-underline-offset: 0.375em !important;
 }
 
 
