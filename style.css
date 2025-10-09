@@ -374,7 +374,7 @@ footer a {
 
 /* Couleur texte au survol */
 footer a:hover {
-  color: var(--tilbilo-color-jn, #000); /* couleur de texte hover */
+  color: var(--tilbilo-color-jn); /* couleur de texte hover */
 }
 
 /* Soulignement animé avec ::after */
@@ -386,13 +386,13 @@ footer a::after {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: var(--tilbilo-color-rg);
+  background-color: var(--tilbilo-color-jn);
   transition: width 0.3s ease;
 }
 
 /* Au survol : le trait s’anime */
 footer a:hover::after {
-  width: 60%; /* ou fixe : 70px si tu veux la même logique que .nav */
+  width: 100%; /* ou fixe : 70px si tu veux la même logique que .nav */
 }
 
 
