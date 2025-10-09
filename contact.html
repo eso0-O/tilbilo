@@ -89,147 +89,98 @@
     <h2 class="fw-bold mb-1">Formulaire</h2>
     <p class="fw-bold mb-5">Pour toute demande concernant nos expertises ou pour obtenir des informations complémentaires sur le cabinet, merci de compléter le formulaire ci-dessous. Nous vous répondrons dans les plus brefs délais.</p>
     </div>
-    <div class="xxxcontainer formDiv rounded"> 
-      
-      <!-- FORMULAIRE avec envoi via GAS -->      
-      <form class="pt-2" id="tilbiloForm" action="https://script.google.com/macros/s/AKfycbxyydaCs9PtME4-QM4hX0Fmk7SrmSxW2J1EiMSCM4m3LwrXnO5wmEc5YUH_sMnjd5355w/exec" method="POST">
 
-        <div class="form-group mb-3 mt-5 mx-5">
-          <label class="form-label" for="prenom">Prénom
-            <span class="text-danger" title="Ce champ est requis.">*</span> :
-          </label>
-          <input type="text" class="form-control" maxlength="55" id="prenom" name="prenom" required>
-        </div>
+    <div class="row">
+      <div class="col-6 col-sm-6 formDiv rounded"> 
+        
+        <!-- FORMULAIRE avec envoi via GAS -->      
+        <form class="pt-2" id="tilbiloForm" action="https://script.google.com/macros/s/AKfycbxyydaCs9PtME4-QM4hX0Fmk7SrmSxW2J1EiMSCM4m3LwrXnO5wmEc5YUH_sMnjd5355w/exec" method="POST">
 
-        <div class="form-group mb-3 mx-5">
-          <label class="form-label" for="nom">Nom
-            <span class="text-danger" title="Ce champ est requis.">*</span> :
-          </label>
-          <input type="text" class="form-control" maxlength="55" id="nom" name="nom" required>
-        </div>
+          <div class="form-group mb-3 mt-5 mx-5">
+            <label class="form-label" for="prenom">Prénom
+              <span class="text-danger" title="Ce champ est requis.">*</span> :
+            </label>
+            <input type="text" class="form-control" maxlength="55" id="prenom" name="prenom" required>
+          </div>
 
-        <div class="form-group mb-3 mx-5">
-          <label class="form-label" for="societe">Société
-            <span class="text-danger" title="Ce champ est requis.">*</span> :
-          </label>
-          <input type="text" class="form-control" maxlength="100" id="societe" name="societe" required>
-        </div>
+          <div class="form-group mb-3 mx-5">
+            <label class="form-label" for="nom">Nom
+              <span class="text-danger" title="Ce champ est requis.">*</span> :
+            </label>
+            <input type="text" class="form-control" maxlength="55" id="nom" name="nom" required>
+          </div>
 
-        <div class="form-group mb-3 mx-5">
-          <label class="form-label" for="fonction">Fonction&nbsp;:</label>
-          <input type="text" class="form-control" maxlength="100" id="fonction" name="fonction">
-        </div>
+          <div class="form-group mb-3 mx-5">
+            <label class="form-label" for="societe">Société
+              <span class="text-danger" title="Ce champ est requis.">*</span> :
+            </label>
+            <input type="text" class="form-control" maxlength="100" id="societe" name="societe" required>
+          </div>
 
-        <div class="form-group mb-3 mx-5">
-          <label class="form-label" for="telephone">Numéro de téléphone&nbsp;:</label>
-          <input type="tel" class="form-control" maxlength="25" id="telephone" name="telephone">
-        </div>
+          <div class="form-group mb-3 mx-5">
+            <label class="form-label" for="fonction">Fonction&nbsp;:</label>
+            <input type="text" class="form-control" maxlength="100" id="fonction" name="fonction">
+          </div>
 
-        <div class="form-group mb-3 mx-5">
-          <label class="form-label" for="email">Adresse e-mail
-            <span class="text-danger" title="Ce champ est requis.">*</span> :
-          </label>
-          <input type="email" class="form-control" maxlength="50" id="email" name="email" required>
-        </div>
+          <div class="form-group mb-3 mx-5">
+            <label class="form-label" for="telephone">Numéro de téléphone&nbsp;:</label>
+            <input type="tel" class="form-control" maxlength="25" id="telephone" name="telephone">
+          </div>
 
-        <div class="form-group mb-3 mx-5">
-          <label class="form-label" for="expertise">Expertise souhaitée
-            <span class="text-danger" title="Ce champ est requis.">*</span> :
-          </label>
-          <select class="form-select" id="expertise" name="expertise" required>
-            <option value="" selected disabled>— Sélectionnez le domaine d'expertise souhaité —</option>
-            <option value="Analyse de données">Analyse de données</option>
-            <option value="Évaluation de projets">Évaluation de projets</option>
-            <option value="Tableaux de bord">Tableaux de bord</option>
-            <option value="Études et enquêtes">Études et enquêtes</option>
-            <option value="Autre">Autre</option>
-          </select>
-        </div>
+          <div class="form-group mb-3 mx-5">
+            <label class="form-label" for="email">Adresse e-mail
+              <span class="text-danger" title="Ce champ est requis.">*</span> :
+            </label>
+            <input type="email" class="form-control" maxlength="50" id="email" name="email" required>
+          </div>
 
-        <div class="form-group mb-3 mx-5">
-          <label class="form-label" for="message">Message
-            <span class="text-danger" title="Ce champ est requis.">*</span> :
-          </label>
-          <textarea class="form-control" id="message" name="message" rows="10" required></textarea>
-        </div>
+          <div class="form-group mb-3 mx-5">
+            <label class="form-label" for="expertise">Expertise souhaitée
+              <span class="text-danger" title="Ce champ est requis.">*</span> :
+            </label>
+            <select class="form-select" id="expertise" name="expertise" required>
+              <option value="" selected disabled>— Sélectionnez le domaine d'expertise souhaité —</option>
+              <option value="Analyse de données">Analyse de données</option>
+              <option value="Évaluation de projets">Évaluation de projets</option>
+              <option value="Tableaux de bord">Tableaux de bord</option>
+              <option value="Études et enquêtes">Études et enquêtes</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
 
-        <div class="form-check mb-3 mx-5">
-          <p>Accord RGPD<span class="text-danger" title="Ce champ est requis.">*</span></p>
-          <input class="form-check-input" type="checkbox" value="" id="checkDefault" required>
-          <label class="form-check-label" for="checkDefault">
-            Pour envoyer ce formulaire vous devez accepter notre <a class="text-warning link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="/mentions-legales" target="_blank">politique de protection des données</a>.
-          </label>
-        </div>
+          <div class="form-group mb-3 mx-5">
+            <label class="form-label" for="message">Message
+              <span class="text-danger" title="Ce champ est requis.">*</span> :
+            </label>
+            <textarea class="form-control" id="message" name="message" rows="10" required></textarea>
+          </div>
 
-        <div class="d-flex justify-content-center">
-          <button type="submit" class="btn btn-submit mt-3 mb-5 w-50">Envoyer</button>
-        </div>
-      </form>
+          <div class="form-check mb-3 mx-5">
+            <p>Accord RGPD<span class="text-danger" title="Ce champ est requis.">*</span></p>
+            <input class="form-check-input" type="checkbox" value="" id="checkDefault" required>
+            <label class="form-check-label" for="checkDefault">
+              Pour envoyer ce formulaire vous devez accepter notre <a class="text-warning link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="/mentions-legales" target="_blank">politique de protection des données</a>.
+            </label>
+          </div>
 
-      <!------------------   SCRIPT JS   ------------------------------>
-      <!--  Message d'alerte personnalisé avec  SweetAlert2 --> 
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-submit mt-3 mb-5 w-50">Envoyer</button>
+          </div>
+        </form>
 
-      <script>
-      document.getElementById("tilbiloForm").addEventListener("submit", async (e) => {
-        e.preventDefault();
+      </div>
+    
 
-        const form = e.target;
-        const submitButton = form.querySelector(".btn-submit");
-        const originalText = submitButton.textContent;
-
-        submitButton.disabled = true;
-        submitButton.textContent = "Envoi en cours…";
-
-        try {
-          const data = new FormData(form);
-          const response = await fetch(form.action, { method: "POST", body: data });
-          const result = await response.json();
-
-          if (result.result === "success") {
-            Swal.fire({
-              icon: "success",
-              title: "Message envoyé !",
-              text: "Merci, votre message a bien été transmis à l’équipe TILBILO.",
-              confirmButtonColor: "#1077a0"
-            });
-            form.reset();
-          } else {
-            Swal.fire({
-              icon: "error",
-              title: "Erreur",
-              text: "Une erreur est survenue. Merci de réessayer dans quelques instants.",
-              confirmButtonColor: "#1077a0"
-            });
-          }
-        } catch (error) {
-          Swal.fire({
-            icon: "warning",
-            title: "Problème réseau",
-            text: "Impossible d’envoyer le message pour le moment. Vérifiez votre connexion.",
-            confirmButtonColor: "#1077a0"
-          });
-        } finally {
-          submitButton.disabled = false;
-          submitButton.textContent = originalText;
-        }
-      });
-      </script>
-
-
-      <!---- alert("❌ Erreur : " + result.message); -->
-
+      <!-- Nos Coordonnées -->
+      <div class="col-6 col-sm-6 xxcontainer-fluid py-5 align-items-center text-center bg-light mesCordonnees">
+        <h2 class="fw-bold mb-4">Nos coordonnées</h2>
+        <ul class="list-unstyled">
+          <li class="mb-3"><strong>Adresse :</strong> 80000 Amiens, France</li>
+          <li class="mb-3"><strong>Téléphone :</strong> <a href="tel:+33 1 23 45 67 80" class="text-decoration-none text-dark">+33 1 23 45 67 80</a></li>
+          <li class="mb-3"><strong>Email :</strong> <a href="mailto:contact@tilbilo.fr" class="text-decoration-none text-dark">contact@tilbilo.fr</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-
-  <!-- Nos Coordonnées -->
-  <div class="container-fluid py-5 align-items-center text-center bg-light mesCordonnees">
-    <h2 class="fw-bold mb-4">Nos coordonnées</h2>
-    <ul class="list-unstyled">
-      <li class="mb-3"><strong>Adresse :</strong> 80000 Amiens, France</li>
-      <li class="mb-3"><strong>Téléphone :</strong> <a href="tel:+33 1 23 45 67 80" class="text-decoration-none text-dark">+33 1 23 45 67 80</a></li>
-      <li class="mb-3"><strong>Email :</strong> <a href="mailto:contact@tilbilo.fr" class="text-decoration-none text-dark">contact@tilbilo.fr</a></li>
-    </ul>
   </div>
 
   <!-- Footer -->
@@ -290,6 +241,60 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
+
+
+      <!------------------   SCRIPT JS pour formulaire   ------------------------------>
+      <!--  Message d'alerte personnalisé avec  SweetAlert2 --> 
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <script>
+      document.getElementById("tilbiloForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const form = e.target;
+        const submitButton = form.querySelector(".btn-submit");
+        const originalText = submitButton.textContent;
+
+        submitButton.disabled = true;
+        submitButton.textContent = "Envoi en cours…";
+
+        try {
+          const data = new FormData(form);
+          const response = await fetch(form.action, { method: "POST", body: data });
+          const result = await response.json();
+
+          if (result.result === "success") {
+            Swal.fire({
+              icon: "success",
+              title: "Message envoyé !",
+              text: "Merci, votre message a bien été transmis à l’équipe TILBILO.",
+              confirmButtonColor: "#1077a0"
+            });
+            form.reset();
+          } else {
+            Swal.fire({
+              icon: "error",
+              title: "Erreur",
+              text: "Une erreur est survenue. Merci de réessayer dans quelques instants.",
+              confirmButtonColor: "#1077a0"
+            });
+          }
+        } catch (error) {
+          Swal.fire({
+            icon: "warning",
+            title: "Problème réseau",
+            text: "Impossible d’envoyer le message pour le moment. Vérifiez votre connexion.",
+            confirmButtonColor: "#1077a0"
+          });
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = originalText;
+        }
+      });
+      </script>
+
+
+      <!---- alert("❌ Erreur : " + result.message); -->
 
 </body>
 </html>
