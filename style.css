@@ -349,22 +349,18 @@ footer .social-icons a i {
   }
 }
 
-/* Pas de décoration par défaut (lien du footer) 
-footer a {
-  text-decoration: none !important;
+
+/* Lorsque survolé des icones */
+.survoleElement a:hover {
+  color: var(--tilbilo-color-rg) !important; /* couleur de texte */
+  text-decoration: underline !important;            /* soulignement */
+  -webkit-text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-underline-offset: 0.375em !important;
 }
 
-/* Lorsque survolé 
-footer a:hover {
-  color: var(--tilbilo-color-rg) !important; /* couleur de texte 
-  text-decoration: underline !important;            /* soulignement 
-  -webkit-text-decoration-color: var(--tilbilo-color-rg) !important;
-  text-decoration-color: var(--tilbilo-color-rg) !important;
-  text-underline-offset: 0.375em !important;
-}*/
-
 /* Lien footer : pas de déco par défaut */
-footer a {
+.lienSurvolTrait a {
   position: relative; /* nécessaire pour ::after */
   color: var(--tilbilo-color-jn);
   text-decoration: none !important;
@@ -373,12 +369,12 @@ footer a {
 }
 
 /* Couleur texte au survol */
-footer a:hover {
+.lienSurvolTrait a:hover {
   color: var(--tilbilo-color-jn); /* couleur de texte hover */
 }
 
 /* Soulignement animé avec ::after */
-footer a::after {
+.lienSurvolTrait a::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -391,7 +387,7 @@ footer a::after {
 }
 
 /* Au survol : le trait s’anime */
-footer a:hover::after {
+.lienSurvolTrait a:hover::after {
   width: 100%; /* ou fixe : 70px si tu veux la même logique que .nav */
 }
 
