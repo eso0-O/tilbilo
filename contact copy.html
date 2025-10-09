@@ -7,7 +7,7 @@
   
     <!-- SEO -->
     <meta name="description" content="Tilbilo, cabinet de conseil expert en recherche et analyse de données, tableaux de bord et évaluation de projets.">
-    <meta name="robots" content="index, follow"/>
+    <meta name="robots" content="noindex, follow"/>
     <link rel="canonical" href="https://tilbilo.fr/contact">
 
     <!-- Favicon -->
@@ -268,29 +268,14 @@
         const submitButton = form.querySelector(".btn-submit");
         const originalText = submitButton.textContent;
 
-        // 🔒 Désactive le bouton pendant l’envoi
         submitButton.disabled = true;
         submitButton.textContent = "Envoi en cours…";
 
         try {
-          // 🔹 Récupère les données du formulaire
           const data = new FormData(form);
-
-          // 🔹 Vérifie la présence du token reCAPTCHA
-          const recaptchaInput = document.querySelector('[name="g-recaptcha-response"]');
-          if (recaptchaInput && recaptchaInput.value) {
-            data.append("g-recaptcha-response", recaptchaInput.value);
-          }
-
-          // 🔹 Envoi de la requête POST vers ton Apps Script
-          const response = await fetch(form.action, {
-            method: "POST",
-            body: data
-          });
-
+          const response = await fetch(form.action, { method: "POST", body: data });
           const result = await response.json();
 
-          // 🔹 Traitement du résultat
           if (result.result === "success") {
             Swal.fire({
               icon: "success",
@@ -299,12 +284,6 @@
               confirmButtonColor: "#1077a0"
             });
             form.reset();
-
-            // Réinitialise le reCAPTCHA (important si tu veux qu’un utilisateur renvoie un autre message)
-            if (typeof grecaptcha !== "undefined") {
-              grecaptcha.reset();
-            }
-
           } else {
             Swal.fire({
               icon: "error",
@@ -313,7 +292,6 @@
               confirmButtonColor: "#1077a0"
             });
           }
-
         } catch (error) {
           Swal.fire({
             icon: "warning",
@@ -321,16 +299,12 @@
             text: "Impossible d’envoyer le message pour le moment. Vérifiez votre connexion.",
             confirmButtonColor: "#1077a0"
           });
-          console.error(error);
-
         } finally {
-          // 🔁 Réactive le bouton et restaure le texte d’origine
           submitButton.disabled = false;
           submitButton.textContent = originalText;
         }
       });
       </script>
-
 
 
       <!---- alert("❌ Erreur : " + result.message); -->
