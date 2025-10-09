@@ -352,7 +352,7 @@ footer .social-icons a i {
 
 /* Lorsque survolé des icones */
 .survoleElement a:hover {
-  color: var(--tilbilo-color-rg) !important; /* couleur de texte */
+  color: var(--tilbilo-color-jn) !important; /* couleur de texte */
   text-decoration: underline !important;            /* soulignement */
   -webkit-text-decoration-color: var(--tilbilo-color-jn) !important;
   text-decoration-color: var(--tilbilo-color-jn) !important;
@@ -371,6 +371,9 @@ footer .social-icons a i {
 /* Couleur texte au survol */
 .lienSurvolTrait a:hover {
   color: var(--tilbilo-color-jn); /* couleur de texte hover */
+  text-decoration: underline !important;            /* soulignement */
+  -webkit-text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-decoration-color: var(--tilbilo-color-jn) !important;
 }
 
 /* Soulignement animé avec ::after */
