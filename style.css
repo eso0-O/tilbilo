@@ -1,7 +1,9 @@
 /*------- VARIABLES GLOBALES ----- */
 :root {
   --main-color: #1077a0;
-  --main-padding: 20px;
+  --tilbilo-color-complmtaire : #A03910;
+  --tilbilo-color-rg : #A0102F;
+  --tilbilo-color-jn : #A08110;
 }
 
 /*------- FIN VARIABLES GLOBALES ----- */
@@ -321,7 +323,7 @@ section img {
 /*--------------------- FIN Style.css pour page 404 ------------------------------------------- */
 
 
-/*--------------------- FIN Style.css pour page FOOTER ------------------------------------------- */
+/*--------------------- FIN Style.css pour FOOTER ------------------------------------------- */
 /* Taille du logo */
 .footer-logo {
   max-height: 100px;
@@ -334,24 +336,10 @@ footer h5 {
   margin-top: 15px;
 }
 
-/* Liens */
-footer a {
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #67b5d4;
-  text-decoration: underline;
-}
-
 /* Icônes réseaux sociaux */
 footer .social-icons a i {
   font-size: 22px;
   transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover i {
-  color: #70bddb;
 }
 
 /* Ajustement mobile */
@@ -361,10 +349,25 @@ footer .social-icons a:hover i {
   }
 }
 
-/*--------------------- FIN Style.css pour page FOOTER ------------------------------------------- */
+/* Pas de décoration par défaut */
+footer a {
+  color: rgba(var(--tilbilo-color-rg), var(--bs-link-opacity, 1)) !important;
+  text-decoration: none !important;
+}
+
+/* Lorsque survolé */
+footer a:hover {
+  color: rgba(var(--tilbilo-color-rg), 1) !important; /* couleur de texte */
+  text-decoration: underline !important;            /* soulignement */
+  -webkit-text-decoration-color: rgba(var(--tilbilo-color-rg), 1) !important;
+  text-decoration-color: rgba(var(--tilbilo-color-rg), 1) !important;
+}
 
 
-/* style.css pour Mention légale style titre */
+/*--------------------- FIN Style.css pour FOOTER ------------------------------------------- */
+
+
+/*--------------------- Style.css pour page Mention légale ------------------------------------------- */
 /* On définit les compteurs */
 .niveauBody {
   counter-reset: h2;
@@ -397,22 +400,18 @@ footer .social-icons a:hover i {
   content: counter(h2) "." counter(h3) "." counter(h4) ". "; /* affiche 1.1.1. */
 }
 
-
 /* Style optionnel */
 .niveauH2, .niveauH3, .niveauH4 {
   color: var(--main-color);
 }
- 
-/* FIN style.css pour Mention légale style titre */
-
-/* ------ Style des point ------*/
+/* Style des point des listes ------*/
 /**disc (par défaut, rond plein), circle (cercle vide), square (carré plein)et none (pas de puce) */
-
 ul {
-  list-style-type: square; /* met des carrés à la place des puces rondes */
+  list-style-type: square;
 }
 
-/* ------ FIN Style des point ------*/
+/*--------------------- FIN Style.css pour page Mention légale ------------------------------------------- */
+
 
 /*✅ Étape 2 : Ajouter le style CSS du trait coloré */
 /* Style des liens du menu */
