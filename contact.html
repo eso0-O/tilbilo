@@ -281,7 +281,7 @@
           const data = new FormData(form);
 
           // 🔹 Exécute le reCAPTCHA v3 et récupère le token
-          const token = await grecaptcha.execute("TA_CLE_DE_SITE_RECAPTCHA", { action: "submit" });
+          const token = await grecaptcha.execute("6LfqfeQrAAAAABC1bFYAv2G19y7RLMc5vaXspmhy", { action: "submit" });
           data.append("g-recaptcha-response", token);
 
           // 🔹 Envoie les données à ton Apps Script
