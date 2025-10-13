@@ -1,18 +1,16 @@
-# Fichier robots.txt pour TILBILO Consulting
-# Généré le : octobre 2025
+# Fichier robots.txt pour TILBILO Consulting.
+# Màj : octobre 2025
 # Site : https://tilbilo.fr/ et https://tilbilo.com/
 
 User-agent: *
 Allow: /
 
-# === AUTORISATIONS SPÉCIFIQUES ===
 # Ressources essentielles au rendu du site
 Allow: /css/
 Allow: /js/
 Allow: /img/
 Allow: /fonts/
 
-# === BLOCAGES RECOMMANDÉS ===
 # Sections administratives et techniques
 Disallow: /admin/
 Disallow: /wp-admin/
@@ -27,10 +25,11 @@ Disallow: /*?ref=
 Disallow: /*?session=
 Disallow: /*?redirect=
 
-# Fichiers sensibles (si existants)
+# Fichiers sensibles
 Disallow: /wp-config.php
 Disallow: /license.txt
 Disallow: /readme.html
+
 
 # === CONFIGURATION SPÉCIFIQUE PAR ROBOT ===
 # Googlebot spécifique
@@ -43,7 +42,7 @@ User-agent: Bingbot
 Allow: /
 Crawl-delay: 2
 
-# Robots agressifs (ex: IA data scrapers)
+# Robots agressifs (data scrapers)
 User-agent: GPTBot
 Disallow: /
 
@@ -53,6 +52,5 @@ Disallow: /
 User-agent: Claude-Web
 Disallow: /
 
-# === INSTRUCTIONS FINALES ===
 # Sitemap
 Sitemap: https://tilbilo.fr/sitemap.xml
