@@ -6,6 +6,11 @@
   --tilbilo-color-jn : #ffc906; /* #A08110;*/
 }
 
+/* Appliquer la couleur principale aux liens */
+a {
+  color: var(--main-color);
+}
+
 /*------- FIN VARIABLES GLOBALES ----- */
 
 /*------------------------ Style.css pour les des pages sauf home page BANDEAUX ------------------------------------------- */
