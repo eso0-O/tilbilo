@@ -565,6 +565,28 @@ ul {
 /* FIN ✅ Étape 2 : Ajouter le style CSS du trait coloré*/
 
 
+/*--------- LES LIENS INTERNES avec classe .internal-link -------- */
+
+.internal-link {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.internal-link:hover {
+  color: var(--tilbilo-color-jn);
+  text-decoration: underline !important;            /* soulignement */
+  -webkit-text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-underline-offset: 0.375em !important;
+}
+
+/* Survol : changer couleur du texte + icône */
+.external-link:hover::after {
+  background-color:var(--tilbilo-color-jn);
+}
+
+/*--------- FIN LES LIENS INTERNES avec classe .internal-link -------- */
+
 /* ===============================
    ICÔNE POUR LES LIENS AVEC CLASSE .external-link
    =============================== */
