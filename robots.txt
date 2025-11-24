@@ -1,0 +1,30 @@
+# Fichier robots.txt pour TILBILO Consulting.
+# Màj : octobre 2025
+# Site : https://tilbilo.fr/ et https://tilbilo.com/
+
+User-agent: *
+Allow: /
+
+# === CONFIGURATION SPÉCIFIQUE PAR ROBOT ===
+# Googlebot spécifique
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot spécifique
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Robots agressifs (data scrapers)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Sitemaps
+Sitemap: https://tilbilo.fr/sitemap.xml

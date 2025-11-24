@@ -1,0 +1,642 @@
+/*------- VARIABLES GLOBALES ----- */
+:root {
+  --main-color: #1077a0;
+  --tilbilo-color-complmtaire : #A03910;
+  --tilbilo-color-rg : #A0102F;
+  --tilbilo-color-jn : #ffc906; /* #A08110;*/
+}
+
+/* Appliquer la couleur principale aux liens */
+a {
+  color: var(--main-color);
+}
+
+/*------- FIN VARIABLES GLOBALES ----- */
+
+/*------------------------ Style.css pour les des pages sauf home page BANDEAUX ------------------------------------------- */
+/*Style commun aux bandeaux*/
+/* Pour que le bandeau ne passe pas sous la barre nav */
+.bandeau {
+  margin-top: 80px; /* hauteur estimée du header */
+}
+
+/* Texte bandeau*/
+.bandeau h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+.bandeau p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+
+/* Image BANDEAUX page CONTACT */
+.bandeau-contact {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("/img/photo-bureau-plafond-14-go.jpg") center/cover no-repeat;
+  display: flex; justify-content: center; align-items: center;
+  color: #fff; text-align: center; padding: 0 1rem;
+}
+
+/* Image BANDEAUX page EXPERTISES */
+.bandeau-expertises {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("/img/background-bureau-home.jpg") center/cover no-repeat;
+  display: flex; justify-content: center; align-items: center;
+  color: #fff; text-align: center; padding: 0 1rem;
+}
+
+/* Image BANDEAUX page A-PROPOS */
+.bandeau-apropos {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("/img/cabinet-data-bureau-home.jpg") center/cover no-repeat;
+  display: flex; justify-content: center; align-items: center;
+  color: #fff; text-align: center; padding: 0 1rem;
+}
+
+/* Image BANDEAUX page MENTIONS LEGALES */
+.bandeau-mlegales {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("/img/img-illustration-07-bibliotheque-inaki-del-olmo.jpg") center/cover no-repeat;
+  display: flex; justify-content: center; align-items: center;
+  color: #fff; text-align: center; padding: 0 1rem;
+}
+
+/* Image BANDEAUX page PLAN DU SITE */
+.bandeau-plansite {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("/img/img-illustration-08-directions-panneau.jpg") center/cover no-repeat;
+  display: flex; justify-content: center; align-items: center;
+  color: #fff; text-align: center; padding: 0 1rem;
+}
+
+
+/*--------------  Style.css pour page Contact ----------------------------------------- */
+.mesCordonnees {
+  position: relative;
+  padding-top: 100px !important ;
+  padding-bottom: 100px !important ;
+}
+
+#tilbiloForm input {
+    background-color: #00000000 ;
+    border: 2px solid #fff ;
+    color: #fff ;
+}
+
+.formDiv {
+  background-color: var(--main-color);
+}
+
+#tilbiloForm .btn {
+  background: #333; 
+  align-items: center;
+  color: #fff; 
+  padding: 0.8rem 1.5rem;
+  border: none; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  font-weight: bold;
+  transition: background-color .3s ease, transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#tilbiloForm .btn:hover {
+  transform: translateY(-2px);
+  background: #000;
+}
+
+/*----------------- FIN Style.css pour page Contact ----------------------------------------- */
+
+/*--------------------- Style.css pour page Index ------------------------------------------- */
+
+/* ============================
+   BARRE DE NAVIGATION TILBILO
+   ============================ */
+.header.barre-de-nav {
+  position: fixed;           /* rend la barre flottante */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;    /* couleur de fond (modifiable) */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+/* Quand la barre est masquée */
+.header.barre-de-nav.nav-hidden {
+  transform: translateY(-100%);
+  box-shadow: none;
+}
+
+/* Pour que le contenu ne passe pas sous la barre */
+.hero {
+  margin-top: 80px; /* hauteur estimée du header */
+}
+
+/* Optionnel : effet au scroll (ombre) */
+.header.barre-de-nav.scrolled {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Section Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("/img/lilbilo-logo-mockup-02.jpg") center/cover no-repeat;
+  display: flex; justify-content: center; align-items: center;
+  color: #fff; text-align: center; padding: 0 1rem;
+}
+
+/* Texte hero*/
+.hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+.hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+
+.hero .btn {
+  background: var(--main-color); 
+  color: #fff; 
+  padding: 0.8rem 1.5rem;
+  border: none; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  font-weight: bold;
+  transition: background-color .3s ease, transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hero .btn:hover {
+  transform: translateY(-3px);
+  background: #000;
+}
+
+/* Cards Services */
+.card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/***** --------------- from new look -----------------------------*/
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+
+body { 
+  color:#000000 ; /*#333; */
+  background-color: #fff; 
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif; 
+}
+
+.mycontainer { 
+  width: 90%; 
+  margin: auto; 
+  max-width: 1200px; 
+}
+
+header.header {
+  background: #ffffff;
+  color: #ffffff;
+  position: fixed;
+  top: 0; width: 100%;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+header .mycontainer {
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+.logo img { height: 65px; }
+
+/*-------------***** -------------------------------------- new*/
+
+/* --- expertise Cards ----- */
+.expertise-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.expertise-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+#expertises .expertise-card:hover, #services .expertise-card:hover  { /*#expertises et #services pour évider d'appliq hover à la page expertise*/
+  transform: translateY(-7px);
+  box-shadow: 0 0.200rem 0.40rem rgba(0, 0, 0, 0.150) !important;
+}
+/*box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadowf: 0 8px 12px rgba(0,0,0,0.15);*/
+/* Scroll animation fade-in */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* --- FIN expertise Cards ----- */
+
+/*--------------------- FIN Style.css pour page Index ------------------------------------------- */
+
+
+/*------------------------ Style.css pour page EXPERTISES ------------------------------------------- */
+
+/* Images des EXPERTISES */
+section img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Gradient des sectio
+#etudes {
+  background: linear-gradient(112.84deg, #1077a0 0.33%, #21a010 100%);
+}*/
+
+/*--------------------- FIN Style.css pour page EXPERTISES ------------------------------------------- */
+
+
+/*----------------------- Style.css pour page A-PROPOS ------------------------------------------- */
+
+/* Équipe */
+.team-member img {
+  object-fit: cover;
+  border: 3px solid var(--main-color);
+}
+
+/*--------------------- FIN Style.css pour page A-PROPOS ------------------------------------------- */
+
+
+/* style.css pour page Confirmation */
+
+.confirmation-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+
+  .confirmation-container {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 550px!important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .confirmation-container img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .confirmation-container h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .confirmation-container p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+/* FIN style.css pour page Confirmation */
+
+/*---------------------- Style.css pour page 404 ------------------------------------------- */
+.corps-404 {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin-top: 80px; /* hauteur estimée du header */
+  height: 100vh;
+  align-content: center;
+}
+.h1-404 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3em;
+  color: var(--main-color);
+}
+.retour-404 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--main-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/*--------------------- FIN Style.css pour page 404 ------------------------------------------- */
+
+
+/*--------------------- FIN Style.css pour FOOTER ------------------------------------------- */
+/* Taille du logo */
+.footer-logo {
+  max-height: 100px;
+  width: auto;
+}
+
+/* Titres du footer */
+footer h5 {
+  color: var(--main-color); /* couleur accent */
+  margin-top: 15px;
+}
+
+/* Icônes réseaux sociaux */
+footer .social-icons a i {
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+/* Ajustement mobile */
+@media (max-width: 768px) {
+  .footer-logo {
+    margin-bottom: 15px;
+  }
+}
+
+
+/* Lorsque survolé des icones */
+.survoleElement a:hover {
+  color: var(--tilbilo-color-jn) !important; /* couleur de texte */
+  text-decoration: underline !important;            /* soulignement */
+  -webkit-text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-underline-offset: 0.375em !important;
+}
+
+/* Lien footer : pas de déco par défaut */
+.lienSurvolTrait a {
+  position: relative; /* nécessaire pour ::after */
+  colorX: var(--tilbilo-color-jn) !;
+  text-decoration: none !important;
+  transition: color 0.3s ease;
+  padding-bottom: 3px; /* espace pour le trait */
+}
+
+/* Couleur texte au survol */
+.lienSurvolTrait a:hover {
+  color: var(--tilbilo-color-jn) !important; /* couleur de texte hover */
+  -webkit-text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-decoration-color: var(--tilbilo-color-jn) !important;
+}
+
+/* Soulignement animé avec ::after */
+.lienSurvolTrait a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--tilbilo-color-jn);
+  transition: width 0.3s ease;
+}
+
+/* Au survol : le trait s’anime */
+.lienSurvolTrait a:hover::after {
+  width: 100%; /* ou fixe : 70px si tu veux la même logique que .nav */
+}
+
+
+
+/*--------------------- FIN Style.css pour FOOTER ------------------------------------------- */
+
+
+/*--------------------- Style.css pour page Mention légale ------------------------------------------- */
+/* On définit les compteurs */
+.niveauBody {
+  counter-reset: h2;
+}
+
+/* ---- H2 = 1., 2., 3. ---- */
+.niveauH2 {
+  counter-reset: h3; /* reset des sous-niveaux à chaque nouveau h2 */
+}
+.niveauH2::before {
+  counter-increment: h2; /* incrémente h2 */
+  content: counter(h2) ". "; /* affiche 1. */
+}
+
+/* ---- H3 = 1.1., 2.1., etc ---- */
+.niveauH3 {
+  counter-reset: h4; /* reset du niveau suivant */
+}
+.niveauH3::before {
+  counter-increment: h3; /* incrémente h3 */
+  content: counter(h2) "." counter(h3) ". "; /* affiche 1.1. */
+}
+
+/* ---- H4 = 1.1.1., 2.1.1., etc ---- */
+.niveauH4 {
+  counter-reset: h5;
+}
+.niveauH4::before {
+  counter-increment: h4;
+  content: counter(h2) "." counter(h3) "." counter(h4) ". "; /* affiche 1.1.1. */
+}
+
+/* Style optionnel */
+.niveauH2, .niveauH3, .niveauH4 {
+  color: var(--main-color);
+}
+/* Style des point des listes ------*/
+/**disc (par défaut, rond plein), circle (cercle vide), square (carré plein)et none (pas de puce) */
+ul {
+  list-style-type: square;
+}
+
+/*--------------------- FIN Style.css pour page Mention légale ------------------------------------------- */
+
+
+/*✅ Étape 2 : Ajouter le style CSS du trait coloré */
+/* Style des liens du menu */
+
+/* ======================
+   NAVIGATION PRINCIPALE
+   ====================== */
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  position: relative;
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 550 !important;
+  transition: color 0.3s;
+  padding-bottom: 5px;
+}
+
+.nav a:hover {
+  color: #000;
+}
+
+/* --- Trait soulignement (desktop + mobile) --- */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--main-color);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 70px;
+}
+
+.nav a.active::after {
+  width: 70px;
+  height: 2px;
+  background-color: var(--main-color) !important;
+}
+
+/* --- Bouton menu burger --- */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+/* ======================
+   VERSION MOBILE
+   ====================== */
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    gap: 0.5rem;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* ✅ centrer le contenu */
+  }
+
+  .nav.active ul {
+    display: flex;
+  }
+
+  .nav li {
+    width: 100%; /* ✅ chaque élément occupe toute la ligne */
+  }
+
+  .nav a {
+    display: block; /* ✅ le lien remplit tout le li */
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: var(--main-color);
+  }
+
+  .nav a::after {
+    left: 50%; /* ✅ recalcule la position du trait si tu veux le garder centré */
+    transform: translateX(-50%);
+  }
+
+  .nav a:hover::after,
+  .nav a.active::after {
+    width: 40px;
+    background-color: var(--main-color) !important;
+  }
+}
+
+
+/* FIN ✅ Étape 2 : Ajouter le style CSS du trait coloré*/
+
+
+/*--------- LES LIENS INTERNES avec classe .internal-link -------- */
+
+.internal-link {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.internal-link:hover {
+  color: var(--tilbilo-color-jn);
+  text-decoration: underline !important;            /* soulignement */
+  -webkit-text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-underline-offset: 0.375em !important;
+}
+
+/* Survol : changer couleur du texte + icône */
+.external-link:hover::after {
+  background-color:var(--tilbilo-color-jn);
+}
+
+/*--------- FIN LES LIENS INTERNES avec classe .internal-link -------- */
+
+/* ===============================
+   ICÔNE POUR LES LIENS AVEC CLASSE .external-link
+   =============================== */
+
+.external-link {
+  position: relative;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.external-link:hover {
+  color: var(--tilbilo-color-jn);
+  text-decoration: underline !important;            /* soulignement */
+  -webkit-text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-decoration-color: var(--tilbilo-color-jn) !important;
+  text-underline-offset: 0.375em !important;
+}
+
+/* Ajout automatique d'une icône après le texte */
+.external-link::after {
+  --icon-size: 0.9rem;         /* Taille de l’icône */
+  --icon-color: currentColor;  /* Même couleur que le texte */
+  content: "";                 /* Obligatoire pour afficher le pseudo-élément */
+  display: inline-block;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-left: 0.3rem;
+  background-color: var(--icon-color);
+
+  /* Icône SVG du lien externe (inline base64 pour éviter les fichiers externes) */
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="black" stroke-width="2" d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6Zm11-3v8h-2V6.4l-7.8 7.8-1.4-1.4L17.6 5H13V3h8Z"/></svg>');
+  mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="black" stroke-width="2" d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6Zm11-3v8h-2V6.4l-7.8 7.8-1.4-1.4L17.6 5H13V3h8Z"/></svg>');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  vertical-align: middle;
+}
+
+/* Survol : changer couleur du texte + icône */
+.external-link:hover::after {
+  background-color:var(--tilbilo-color-jn);
+}
+/* FIN ===============================
+   ICÔNE POUR LES LIENS AVEC CLASSE .external-link
+   =============================== */

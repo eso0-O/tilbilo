@@ -1,0 +1,5 @@
+title: "TILBILO Consulting"
+description: "TILBILO Consulting : cabinet expert en analyse de données, tableaux de bord stratégiques et évaluation de projets."
+url: "https://tilbilo.fr" 
+plugins:
+  - jekyll-sitemap
