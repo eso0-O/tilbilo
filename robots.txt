@@ -8,9 +8,8 @@ Allow: /
 Disallow: /README.md
 Disallow: /CNAME
 Disallow: /_config.yml
-Disallow: /404.html
 
-# 2. Blocage des Scrapers IA (Protection de votre contenu intellectuel)
+# 2. Bloquer bots d'extraction IA (Scrapers IA )
 User-agent: GPTBot
 Disallow: /
 
@@ -31,4 +30,5 @@ Disallow: /
 
 # 3. Sitemap
 Sitemap: https://tilbilo.fr/sitemap.xml
-Sitemap: https://tilbilo.fr/plan-du-site.html
+
+Host: tilbilo.fr
